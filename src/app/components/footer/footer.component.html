@@ -1,4 +1,31 @@
-<div class="content--footer">
-  <div><img class="menuContainer-logo" src="../../../assets/logo.png"></div>
-  <div></div>
-</div>
+<div class="content--container">
+  <div class="content--footer">
+
+    <div>
+      <img class="logo" [src]="info.logo">
+      <div class="txt-gray content-endereco">
+        <span > {{info.endereco.rua}}, {{info.endereco.numero}} {{info.endereco.complemento}}</span>
+        <span > {{info.endereco.bairro}}, {{info.endereco.cidade}}, {{info.endereco.estado}}</span>
+        <span > CEP: {{info.endereco.cep}}</span>
+      </div>
+      <div class="content-redes" >
+        <a  *ngFor="let item of info.redesSociais" [href]="item.link" target="_blank"><img class="img-m" [src]="item.logo" /></a>
+      </div>
+    </div>
+    <div class="txt-gray content-listMenu" style="display: flex; flex-direction:column">
+      <a *ngFor="let item of listMenu" class="notStyle txt-gray listMenu-item" [href]="item.link" >{{item.name.toUpperCase()}}</a>
+    </div>
+    <div class="content-info" >
+      <div >
+        <p>{{info.nomeAno}}</p>
+        <p> Todos os direitos reservados.</p>
+        <p>CNPJ: {{info.cnpj}}</p>
+      </div>
+      <div>Confira a nossa <a>Política de privacidade</a></div>
+     
+    </div>
+  </div>
+  <div class="arrow--button">
+    <button > <img [src]="info.arrowUpImage"></button>
+  </div>
+ </div>

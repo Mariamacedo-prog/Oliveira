@@ -1,0 +1,30 @@
+{
+  "oliveiraInfo": {
+    "redesSociais": [
+      {"logo": "../assets/instagram.png", "link": "http://instagram.com"},
+      {"logo": "../assets/facebook.png", "link": "http://facebook.com"},
+      {"logo": "../assets/youtube.png", "link": "http://youtube.com"}
+    ],
+    "arrowUpImage":"../assets/arrow-up.png",
+    "endereco": {
+      "rua": "Av ezequias bezerra de fatrias",
+      "numero": "85",
+      "complemento": "bl 20 ap 4",
+      "bairro": "Vila São Paulo",
+      "estado": "SP",
+      "cidade": "Ferraz de vasconcelos",
+      "cep": "08507-220"
+    },
+    "logo": "../assets/logo.png",
+    "nomeAno": "Oliveira Construtora e Incorporadora 2022",
+    "cnpj": "ooo.ooo/ooo-oo-ooo-oo"
+  },
+  "listMenu": [
+    {"name":"Home","link": "/"}, 
+    {"name": "Sobre a Oliveira",  "link": "/sobre"}, 
+    {"name": "Empreendimentos",  "link": "/empreendimentos"}, 
+    {"name":  "Fale Conosco",  "link": "/fale-conosco"}, 
+    {"name":  "Portal do Cliente",  "link": "/portal-cliente"}, 
+    {"name":  "Contato",  "link": "/contato"}
+  ]
+}

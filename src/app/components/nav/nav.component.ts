@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../../data.service';
 type ListMenuType ={
   name: string,
   link: string
@@ -18,12 +19,15 @@ export class NavComponent implements OnInit {
     whatsLogo: "",
     logo: ""
   };
-  listItemsMenu: ListMenuType[] = [{name:'Home', link: '/'}, {name: 'Sobre a Oliveira',  link: '/sobre'}, {name: 'Empreendimentos',  link: '/empreendimentos'}, {name:  'Fale Conosco',  link: '/fale-conosco'}, {name:  'Portal do Cliente',  link: '/portal-cliente'}, {name:  'Contato',  link: '/contato'}]
-  constructor( private router: Router) { }
+  listItemsMenu: ListMenuType[] = []
+  constructor( private router: Router, private dataService: DataService) { }
 
   async ngOnInit() {
-   
-  }
+    await this.dataService.getData().subscribe((data: any) =>{
+       this.listItemsMenu = data.listMenu;
+       this.infoNav = data.oliveiraInfo;
+     })
+   }
 
 
 }

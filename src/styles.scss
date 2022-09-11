@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.logo{
+  width:  150px;
+  margin-right: 50px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
+.txt-gray{
+  color: rgb(99, 99, 99);
+}
+.notStyle {
+  text-decoration: none;
+  list-style: none;
+}
