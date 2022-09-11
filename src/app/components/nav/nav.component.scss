@@ -1,0 +1,52 @@
+$background   : rgb(255, 255, 255);
+$background-hover   :  rgb(241, 241, 241);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  "Helvetica Neue",Helvetica,Arial,sans;
+}
+
+.menuContainer{
+  position: fixed;
+  background-color: $background;
+  top: 0;
+  right: 0;
+  width: 100%;
+  font-size: 14px;
+  z-index: 999;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ol{
+    display: flex;
+    height: 80px;
+    list-style-type: none;
+  };
+}
+
+.menuContainer-logo{
+  width:  150px;
+  margin-right: 50px;
+}
+
+.menuContainer-lista-item{
+  height: 80px;
+  color: #244837;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 35px 15px 15px 15px;
+  background-color: $background;
+  position: relative;
+  display: inline-block;
+  border:none;
+  transition: all 1s ease;
+}
+
+.menuContainer-lista-item:hover, .active-item{
+  background-color: $background-hover ;
+  cursor: pointer;
+  
+}
