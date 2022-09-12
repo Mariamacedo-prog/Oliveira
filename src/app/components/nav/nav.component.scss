@@ -26,8 +26,6 @@ $background-hover   :  rgb(241, 241, 241);
     list-style-type: none;
   };
 }
-
-
 .menuContainer-lista-item{
   height: 80px;
   color: #244837;
@@ -40,9 +38,18 @@ $background-hover   :  rgb(241, 241, 241);
   border:none;
   transition: all 1s ease;
 }
-
 .menuContainer-lista-item:hover, .active-item{
   background-color: $background-hover ;
   cursor: pointer;
-  
+}
+
+
+@media (max-width: 915px) {
+  .menuContainer-lista-item{
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 740px) {
+ 
 }

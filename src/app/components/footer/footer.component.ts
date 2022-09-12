@@ -20,4 +20,8 @@ export class FooterComponent implements OnInit {
      })
    }
 
+   goToStart(){
+    document.documentElement.scrollTop = -2000;
+  }
+
 }
