@@ -12,7 +12,8 @@ type ListMenuType ={
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  @Input() activePage = '';
+  @Input() activePage = 'Home';
+  iconSrcMenu = ""
   showMenu = false;
   infoNav = {
     whats: "",
@@ -26,6 +27,7 @@ export class NavComponent implements OnInit {
     await this.dataService.getData().subscribe((data: any) =>{
        this.listItemsMenu = data.listMenu;
        this.infoNav = data.oliveiraInfo;
+       this.iconSrcMenu = data.image64.menu;
      })
    }
 

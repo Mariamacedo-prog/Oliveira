@@ -42,7 +42,77 @@ $background-hover   :  rgb(241, 241, 241);
   background-color: $background-hover ;
   cursor: pointer;
 }
+.menuButton{
+  display: none;
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+  color: rgb(243, 153, 18);
+}
 
+.activeMenu{
+  background-color: rgb(243, 153, 18);
+  padding: 2px;
+  border-radius: 50%;
+  animation-name: backgroundMenu;
+  animation-duration: 1s;
+}
+
+.menuCelular{
+
+  position: fixed;
+  top: 60;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 998;
+  background-color: $background;
+  ol{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  li{
+    display: flex;
+    justify-content:center;
+    list-style: none;
+    padding: 30px;
+    width: 100%;
+    border-bottom: 1px solid $background-hover;
+  }
+
+  a{
+    text-decoration: none;
+    font-size:  20px;
+    color: #244837;
+  }
+
+  animation-name: menuFrame;
+  animation-duration: 0.8s;
+}
+
+@keyframes backgroundMenu {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: rgb(243, 153, 18);
+  }
+}
+
+@keyframes menuFrame {
+  from {
+    opacity: 0.6;
+    margin-top: -615px;
+    margin-right: -615px;
+    
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+}
 
 @media (max-width: 915px) {
   .menuContainer-lista-item{
@@ -51,5 +121,14 @@ $background-hover   :  rgb(241, 241, 241);
 }
 
 @media (max-width: 740px) {
- 
+  .menuContainer-lista-item{
+    display: none;
+  }
+  .menuContainer{
+    justify-content: space-between;
+  }
+
+  .menuButton{
+    display: block;
+  }
 }

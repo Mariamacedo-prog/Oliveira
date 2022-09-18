@@ -3,7 +3,7 @@
   <ol class="menuContainer-lista">
     <li  *ngFor="let item of listItemsMenu" ><a class="menuContainer-lista-item item-animation {{ activePage === item.name ? 'active-item': ''}} " [routerLink]="item.link" >{{item.name}}</a></li>
   </ol>
- 
+  <img class="menuButton {{showMenu === true ? 'activeMenu' : ''}}" (click)="showMenu = !showMenu" [src]="iconSrcMenu">
 </nav>
 
 
