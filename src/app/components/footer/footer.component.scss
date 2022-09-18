@@ -83,10 +83,23 @@
 
 @media (max-width: 740px) {
   .content--footer{
+ 
     flex-direction: column;
+  }
+  .arrow--button{
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    button{
+      margin-right: 10px;
+      margin-bottom: 10px
+    }
   }
   .logo{
     margin-top:20px;
+  }
+
+  .content--container{
+    height: 600px;
   }
   .content-endereco{
     font-size: 14px;
