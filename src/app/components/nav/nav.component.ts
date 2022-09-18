@@ -12,7 +12,7 @@ type ListMenuType ={
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  @Input() activePage = 'Home';
+  @Input() activePage = '';
   iconSrcMenu = ""
   showMenu = false;
   infoNav = {
