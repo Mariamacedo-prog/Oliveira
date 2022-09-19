@@ -1,0 +1,36 @@
+
+<div *ngIf="images &&  images.length > 0 " class="carousel-container" >
+ <div *ngFor="let image of images; let i = index">
+  <div  class="carousel-linear"  >
+    <img class="fade"  [src]="image.img" [alt]="image.alt" [ngClass]="{'image-active': selectedIndex === i}">
+  </div>
+  <div class="text-container" *ngIf="textCenter">
+    <div class="text-content">
+      <h1 [ngClass]="{'title-active': selectedIndex === i}">{{image.text.title}}</h1>
+      <h3 [ngClass]="{'subtitle-active': selectedIndex === i}">{{image.text.subtitle}}</h3>
+    </div>
+    <a class="btn-more" [href]="image.link" target="_blank" [ngClass]="{'button-active': selectedIndex === i}">SAIBA MAIS</a>
+  </div>
+</div>
+ 
+  <div *ngIf="indicators" class="carousel-dot-container">
+    <span 
+      class="dot"  
+      *ngFor="let dot of images; let i = index"
+      [ngClass]="{'active': selectedIndex === i}"
+      (click)="selectItem(i)"
+    ></span>
+  </div>
+
+  <button *ngIf="controls" class="btn-carousel btn-prev">
+    <div class=" icon-carousel ">
+      <mat-icon (click)="onPrevClick()" aria-hidden="true" aria-label="arrow back">arrow_back</mat-icon>
+    </div>
+  </button>
+
+  <button *ngIf="controls" class="btn-carousel btn-next">
+    <div class=" icon-carousel ">
+      <mat-icon (click)="onNextClick()" aria-hidden="true" aria-label="arrow forward">arrow_forward</mat-icon>
+    </div>
+  </button>
+</div>
