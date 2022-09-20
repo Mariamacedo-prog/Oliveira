@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from './components/carousel/carousel.module';
 import { SlideCarouselModule } from './components/slideCarousel/slideCarousel.module';
 import { HomeComponent } from './pages/home/home.component';
-
+import { SlideCardModule } from './components/slideCard/slideCard.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserAnimationsModule,
     NavModule,
     CarouselModule,
-    SlideCarouselModule
+    SlideCarouselModule,
+    SlideCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
