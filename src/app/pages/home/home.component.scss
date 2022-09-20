@@ -93,3 +93,80 @@
   margin-top: -17px;
   margin-left: 10px;
 }
+
+
+@media (max-width: 915px) {
+  .sobre--info{
+    padding: 10px;
+  }
+  
+  .sobre--title{
+    font-size: 35px;
+  }
+  
+  .sobre--subtitle{
+    font-size: 25px;
+  }
+  
+  .sobre--frase{
+    margin-top: -10px;
+  }
+
+  .golden--div{
+    margin-bottom: -350px;
+    margin-left: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(210, 187, 139);
+  }
+  
+  .image--oliveira{
+    img{
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .content-sobre-info{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .sobre--info{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sobre--title{
+    font-size: 25px;
+  }
+  
+  .sobre--subtitle{
+    font-size: 20px;
+  }
+  
+  .sobre--frase{
+    margin-top: -10px;
+  }
+
+  .golden--div{
+    margin-bottom: -270px;
+    margin-left: 20px;
+    width:250px;
+    height: 300px;
+    background-color: rgb(210, 187, 139);
+  }
+  
+  .image--oliveira{
+    img{
+      height: 250px;
+    }
+  }
+
+  .frase{
+    width: 80%;
+
+  }
+}
