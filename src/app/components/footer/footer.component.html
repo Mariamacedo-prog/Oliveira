@@ -3,8 +3,8 @@
 
     <div>
       <img class="logo" [src]="info.logo">
-      <div class="txt-gray content-endereco">
-        <span > {{info.endereco.rua}}, {{info.endereco.numero}} {{info.endereco.complemento}}</span>
+      <div class="txt-gray content-endereco" *ngIf="info.endereco">
+        <span > {{info.endereco.rua ? info.endereco.rua : ''}}, {{info.endereco.numero}} {{info.endereco.complemento}}</span>
         <span > {{info.endereco.bairro}}, {{info.endereco.cidade}}, {{info.endereco.estado}}</span>
         <span > CEP: {{info.endereco.cep}}</span>
       </div>

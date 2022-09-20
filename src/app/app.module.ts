@@ -8,11 +8,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from './components/carousel/carousel.module';
+import { SlideCarouselModule } from './components/slideCarousel/slideCarousel.module';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import { CarouselModule } from './components/carousel/carousel.module';
     HttpClientModule,
     BrowserAnimationsModule,
     NavModule,
-    CarouselModule
+    CarouselModule,
+    SlideCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
