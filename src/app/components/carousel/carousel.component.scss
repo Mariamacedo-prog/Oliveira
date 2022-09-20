@@ -214,16 +214,10 @@
 @media (max-width: 1000px) {
   .carousel-linear{
     position: relative ;
-
   }
  
-
   .carousel-container img.image-active{
-
-
-    height: 100vh;
+    height: calc(100vh - 80px);
     width: auto;
-
-  
   }
 }
