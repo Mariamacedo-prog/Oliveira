@@ -87,12 +87,13 @@
         }}
   ],
   "pageHome":{
-    "sobre": "Oliveira Construtora e Incorporadora 2022, Oliveira Construtora e Incorporadora 2022 Oliveira Construtora e Incorporadora 2022Oliveira Construtora e Incorporadora 2022 Oliveira Construtora e Incorporadora 2022Oliveira Construtora e Incorporadora 2022",
+    "sobre": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     "frase":{
       "conteudo": "Nós firmamos aos clientes o compromisso de ofertar o melhor lar para as suas famílias. Oferecendo um excelente visual, localização, segurança e conforto. Respeitando sempre a necessidade e a escolha do cliente.",
-      "nome": "GABRYEL OLIVEIRA",
+      "nome": "– GABRYEL OLIVEIRA    ",
       "posicao": "Sócio Fundador da Oliveira"
     },
-    "imgHome": "../assets/images/home.jpg"
+    "imgHome": "../assets/images/home.jpg",
+    "aspas": "../assets/aspas.png"
   }
 }

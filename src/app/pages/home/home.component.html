@@ -2,4 +2,31 @@
   <app-nav [activePage]="'Home'"></app-nav>
   <app-carousel [images]="images"></app-carousel>
   <app-slideCarousel [images]="images"></app-slideCarousel>
+
+  <div class="content-sobre-info">
+    <div class="sobre--info">
+      <h3 class="sobre--title">Uma construtora de <b>raízes fortes</b></h3>
+      <h1 class="sobre--subtitle">Sobre a Oliveira</h1>
+      <div class="sobre--frase">{{homeInfo.sobre}}</div>
+      <div>
+        <div class="content-redes" >
+          <a  *ngFor="let item of redesSociais" [href]="item.link" target="_blank"><img class="img-m" [src]="item.logo" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="golden--div"></div>
+      <div class="image--oliveira">
+        <img [src]=" homeInfo.imgHome" alt="Oliveira" class="src">
+      </div>
+    </div>
+  </div>
+  <div class="content-frase">
+    <div class="frase">
+      <p class="frase--conteudo"><img class="aspas" [src]="homeInfo.aspas">{{homeInfo.frase.conteudo}}</p>
+      <p class="frase--nome" style="  font-weight: bold;">{{homeInfo.frase.nome}}</p>
+      <p class="frase--posicao" >{{homeInfo.frase.posicao}}</p>
+    </div>
+    
+  </div>
 </div>

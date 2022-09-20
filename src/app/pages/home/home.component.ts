@@ -8,9 +8,9 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  homeInfo = {};
-  images = [];
-  redesSociais = []
+  homeInfo: any = {};
+  images: any = [];
+  redesSociais: any = []
   constructor( private router: Router, private dataService: DataService) { }
 
   async ngOnInit() {
