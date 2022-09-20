@@ -38,42 +38,22 @@ export class SlideCarouselComponent implements OnInit {
 
   }
 
+    logTouchstart(event:any){
+    for (let i = 0; i < event.changedTouches.length; i++) {
+      if(event.changedTouches[i].clientX < 100){
+        this.handleLeftArrow ()
+      }
+      if(event.changedTouches[i].clientX > 271){
+        this.handleRightArrow ()
+      }
+    }
+  }
+
   selectItem(index: number): void{
     this.selectedIndex = index;
   }
 
-  onPrevClick(){
-    const theDiv = document.querySelector('#thediv');
-    this.scroller.scrollToPosition([300, 100]);
-    console.log(theDiv)
-    if(theDiv !== null){
-      theDiv.scrollLeft = 2000;
-    }
 
-    // if(this.selectedIndex === 0){
-    //   this.selectedIndex = this.images.length - 1;
-    // }else{
-    //   this.selectedIndex --;
-    // }
-  }
-
-  onNextClick(){
-    const theDiv = document.querySelector('#thediv');
-    console.log(theDiv)
-    if(theDiv !== null){
-      theDiv.scrollLeft = 2000;
-    }
-
-    // if(this.selectedIndex === this.images.length - 1){
-    //   this.selectedIndex = 0;
-    // }else{
-    //   this.selectedIndex ++;
-    // }
-  }
-
-
-
- 
 
   handleLeftArrow () {
     let x = this.scrollX + Math.round(window.innerWidth / 2);

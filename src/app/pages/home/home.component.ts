@@ -8,13 +8,16 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  images = []
+  homeInfo = {};
+  images = [];
+  redesSociais = []
   constructor( private router: Router, private dataService: DataService) { }
 
   async ngOnInit() {
     await this.dataService.getData().subscribe((data: any) =>{
        this.images = data.carouselArray;
+       this.redesSociais = data.oliveiraInfo.redesSociais;
+       this.homeInfo = data.pageHome;
      })
    }
 

@@ -1,7 +1,7 @@
 <div class="movieRow"> 
   <div class="movieRow--listArea">
     <div class="movieRow--list"  [ngStyle]="{'margin-left.px': scrollX,  'width.px': this.images.length * 450 }"  >
-          <a *ngFor="let item of images" class="movieRow--item" [href]="item.link" target="_blank">
+          <a *ngFor="let item of images" class="movieRow--item" [href]="item.link" target="_blank" (touchstart)="logTouchstart($event)">
             <img
               [src]="item.img"
               [alt]="item.alt"
