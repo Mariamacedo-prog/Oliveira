@@ -1,6 +1,9 @@
+$green:   #244837;
+
 .content{
   width: 100%;
-  height: auto;
+
+  overflow: hidden;
 }
 
 .img-m{
@@ -44,7 +47,7 @@
 
 .sobre--subtitle{
   color: rgb(210, 187, 139);
-  font-family: 'Delius Swash Caps', cursive;
+  font-family: 'Poiret One', cursive;
   font-weight: bold;
   font-size: 35px;
 }
@@ -92,6 +95,13 @@
 .frase--posicao{
   margin-top: -17px;
   margin-left: 10px;
+}
+
+.empreendimento-titulo{
+  color: #244837;
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 30px;
 }
 
 

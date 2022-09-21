@@ -1,29 +1,37 @@
 <div class="movieRow"> 
-  <div class="movieRow--listArea">
-    <div class="movieRow--list"  [ngStyle]="{'margin-left.px': scrollX,  'width.px': this.images.length * 450 }"  >
-          <a *ngFor="let item of images" class="movieRow--item" [href]="item.link" target="_blank" (touchstart)="logTouchstart($event)">
-            <img
-              [src]="item.img"
-              [alt]="item.alt"
-            />
-          </a>
-    </div>
-  </div>
-<div class="teste">
+  
   <button *ngIf="controls" class=" btn-prev">
-    <div class="icon-carousel" (click)="handleLeftArrow()">
+    <div class="movieRow--left" (click)="handleLeftArrow()">
       <mat-icon  aria-hidden="true" aria-label="arrow back">arrow_back</mat-icon>
       <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back"></mat-icon>
     </div>
   </button>
   
   <button *ngIf="controls" class=" btn-next">
-    <div class=" icon-carousel"  (click)="handleRightArrow()">
+    <div class="movieRow--right"  (click)="handleRightArrow()">
       <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward"></mat-icon>
       <mat-icon aria-hidden="true" aria-label="arrow forward">arrow_forward</mat-icon>
     </div>
   </button>
-</div>
+
+  <div class="movieRow--listArea">
+    <div class="movieRow--list"  [ngStyle]="{'margin-left.px': scrollX,  'width.px': this.images.length * 350 }"  >
+         
+          <a *ngFor="let item of images" class="movieRow--item" [href]="item.link" target="_blank" (touchstart)="logTouchstart($event)">
+            <div class="absolute-text" >
+              {{item.text.status}}
+            </div>
+            <div id="opacity_div"></div>
+            <img
+              [src]="item.img"
+              [alt]="item.alt"
+            />
+            <p class="absolute-text" >{{item.text.title}}</p>
+            <p class="absolute-text" >{{item.text.subtitle}}</p>
+          </a>
+    </div>
+  </div>
+
 
 </div>
 

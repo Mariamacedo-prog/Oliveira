@@ -67,7 +67,7 @@ export class SlideCardComponent implements OnInit {
 
   handleRightArrow() {
     let x = this.scrollX - Math.round(window.innerWidth / 2);
-    let listW = this.images.length * 450;
+    let listW = this.images.length * 350;
     console.log("teste 1", window.innerWidth , listW , x)
     if (window.innerWidth - listW > x) {
       console.log("teste 3", window.innerWidth , listW , x ,  "esse", window.innerWidth - listW - 60)
