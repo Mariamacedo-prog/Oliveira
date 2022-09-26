@@ -41,19 +41,19 @@
       "alt": "SLIM LAUZANE", 
       "link": "http://www.slimlauzane.com.br/mobile.html",
       "text": {
-        "title": "Slim lauzane", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
+        "title": "Slim lauzane", "subtitle": "FACHADA LAUZANE", "status": "EM CONSTRUÇÃO"
       }},
       {"img": "https://i0.statig.com.br/bancodeimagens/95/jd/xz/95jdxzhsw6iumfcz6rjl28jm3.jpg", 
       "alt": "SLIM LAUZANE", 
       "link": "http://www.slimlauzane.com.br/mobile.html",
       "text": {
-        "title": "Slim lauzane", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
+        "title": "Slim lauzane", "subtitle": "FACHADA LAUZANE", "status": "ENTREGUE"
       }},
       {"img": "https://img.freepik.com/fotos-gratis/predio-de-escritorios-moderno-opiniao-de-angulo-baixo-dos-arranha-ceus-na-cidade-de-singapura-predio-de-escritorios-moderno-opiniao-de-angulo-baixo-dos-arranha-ceus-na-cidade-de-singapura_231208-1463.jpg?w=996&t=st=1663542774~exp=1663543374~hmac=803cd614d26375ce2878890c6e941cf7b7ea43fbe0d56874c808486ebf92b1b0",
       "alt": "FACHADA CACHOEIRINHA",
       "link": "http://www.slimcachoeirinha.com.br/",
       "text": {
-         "title": "Slim cachoeirinha", "subtitle": "FACHADA CACHOEIRINHA", "status": "LANÇAMENTO"
+         "title": "Slim cachoeirinha", "subtitle": "FACHADA CACHOEIRINHA", "status": "EM CONSTRUÇÃO"
        }},
        {"img": "https://img.freepik.com/fotos-premium/cidade-de-raquete-que-constroi-escritorio-de-edificio-comercial_1417-5099.jpg?w=996", 
        "alt": "SLIM LAUZANE", 
@@ -71,7 +71,7 @@
        "alt": "FACHADA CACHOEIRINHA",
        "link": "http://www.slimcachoeirinha.com.br/",
        "text": {
-          "title": "Slim cachoeirinha", "subtitle": "FACHADA CACHOEIRINHA", "status": "LANÇAMENTO"
+          "title": "Slim cachoeirinha", "subtitle": "FACHADA CACHOEIRINHA", "status": "EM CONSTRUÇÃO"
         }},
         {"img": "https://img.freepik.com/fotos-premium/cidade-de-raquete-que-constroi-escritorio-de-edificio-comercial_1417-5099.jpg?w=996", 
         "alt": "SLIM LAUZANE", 
@@ -83,7 +83,7 @@
         "alt": "SLIM LAUZANE", 
         "link": "http://www.slimlauzane.com.br/mobile.html",
         "text": {
-          "title": "Slim lauzane", "subtitle": "FACHADA LAUZANE", "status": "LANÇAMENTO"
+          "title": "Slim lauzane", "subtitle": "FACHADA LAUZANE", "status": "EM CONSTRUÇÃO"
         }}
   ],
   "pageHome":{
@@ -94,6 +94,8 @@
       "posicao": "Sócio Fundador da Oliveira"
     },
     "imgHome": "../assets/images/home.jpg",
-    "aspas": "../assets/aspas.png"
+    "aspas": "../assets/aspas.png",
+    "whats": "../assets/whats.png",
+    "calendar": "../assets/calendar.png"
   }
 }

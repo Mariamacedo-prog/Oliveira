@@ -22,15 +22,20 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   display: inline-block;
   width: 350px;
   height: 550px;
+  transition: all ease 0.5s;
 }
-
+.movieRow--item:hover{
+  p{
+    color: #fff;
+  }
+}
 
 #opacity_div{
   background: linear-gradient(to top, #fff 30%, transparent 70%);
   width: 350px;
   height: 550px;
   position:absolute;
-  opacity:0.5; /* manipulate to desired opacity */
+  opacity:0.8; /* manipulate to desired opacity */
   z-index: 144;
   transition: all ease 0.2s;
 }
@@ -39,6 +44,41 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   z-index: 150; 
   position: absolute;
 }
+
+.status-div{
+  background-color: rgb(34, 56,43);
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  left: 15%;
+}
+
+.text-title{
+  color: #000000;
+  font-size: 30px;
+  font-weight:bold;
+  text-align: center;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+}
+
+.text-subtitle{
+  color: rgb(132, 132, 132);
+  font-size: 15px;
+  font-weight:100;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 
 #opacity_div:hover{
   background: #fff;
@@ -128,6 +168,10 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   .movieRow--listArea {
     margin: 0;
     padding: 0;
+  }
+  
+  .text-subtitle{
+    color: #fff;
   }
 }
 

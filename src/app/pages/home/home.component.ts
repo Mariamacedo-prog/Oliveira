@@ -10,6 +10,7 @@ import { DataService } from 'src/app/data.service';
 export class HomeComponent implements OnInit {
   homeInfo: any = {};
   images: any = [];
+  whatslogo: string = ''
   redesSociais: any = []
   constructor( private router: Router, private dataService: DataService) { }
 

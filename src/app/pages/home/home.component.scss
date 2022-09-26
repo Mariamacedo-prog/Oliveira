@@ -2,7 +2,6 @@ $green:   #244837;
 
 .content{
   width: 100%;
-
   overflow: hidden;
 }
 
@@ -13,6 +12,33 @@ $green:   #244837;
 
 .content-redes{
 
+}
+
+.text--faleConosco{
+  color: rgb(88, 88, 88);
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.button-faleConosco{
+  width: 550px;
+  background-color: rgb(219, 137, 7);
+  color: #fff;
+  font-size: 45px;
+  b {
+    margin-left: 10px;
+  }
+}
+
+.img--faleConosco{
+  width: 100px;
+ 
+  display: flex;
+  flex-direction: column;
+  img{
+    height: 70px;
+    width: 70px;
+  }
 }
 
 .golden--div{
@@ -177,5 +203,12 @@ $green:   #244837;
 
   .frase{
     width: 80%;
+  }
+
+  .button-faleConosco{
+    font-size: 30px;
+    b {
+      margin-left: 5px;
+    }
   }
 }
