@@ -139,6 +139,12 @@ $green:   var( --green);
   }
 }
 
+.endereco-agenda{
+  color: #fff;
+  margin: 0;
+  padding:0;
+}
+
 @media (max-width: 1260px) {
   .squad{
     padding: 10px;
@@ -173,6 +179,16 @@ $green:   var( --green);
 
   .title-agenda{
     font-size: 45px ; 
+  }
+
+  .endereco-agenda{
+    font-size: 11px;
+  }
+
+  .button-agendar{
+    width: 200px;
+    font-size: 15px;
+    padding: 2px;
   }
 }
 

@@ -11,6 +11,7 @@ export class AboutComponent implements OnInit {
   aboutInfo: any = {};
   images: any = [];
   whatsLink: string = '';
+  endereco: any = {};
   constructor( private router: Router, private dataService: DataService) { }
 
   async ngOnInit(){
@@ -19,6 +20,7 @@ export class AboutComponent implements OnInit {
       this.images = data.carouselArray;
       this.aboutInfo = data.pageSobre;
       this.whatsLink = data.oliveiraInfo.whatsLink;
+      this.endereco = data.oliveiraInfo.endereco;
     })
 
   }
