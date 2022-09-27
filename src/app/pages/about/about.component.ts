@@ -10,12 +10,15 @@ import { DataService } from 'src/app/data.service';
 export class AboutComponent implements OnInit {
   aboutInfo: any = {};
   images: any = [];
+  whatsLink: string = '';
   constructor( private router: Router, private dataService: DataService) { }
 
   async ngOnInit(){
+    document.documentElement.scrollTop = -2000;
     await this.dataService.getData().subscribe((data: any) =>{
       this.images = data.carouselArray;
       this.aboutInfo = data.pageSobre;
+      this.whatsLink = data.oliveiraInfo.whatsLink;
     })
 
   }
