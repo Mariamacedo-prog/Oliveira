@@ -1,0 +1,54 @@
+<div class="content">
+  <app-nav [activePage]="'Sobre a Oliveira'"></app-nav>
+  <div class="halfImg" style="display: block; height: 50vh">
+    <img  [src]="aboutInfo.imgPrincipal" alt="teste">
+
+  </div>
+  <div style="margin-top: -150px; position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: space-around;" >
+    <h1 class="principal-titulo-sobre" >Sobre a <b>Oliveira</b></h1>
+    <div class="squad-principal">
+      <p class="txt-gray">{{aboutInfo.textoPrincipal}}</p>
+    </div>
+    <div  class="squad--area">
+      <div class="squad">
+        <span class="icon-squad">♦</span>
+        <span class="title-squad">Missão</span>
+        <p class="txt-gray">{{aboutInfo.missao}}</p>
+      </div>
+      <div class="squad">
+        <span class="icon-squad">●</span>
+        <span class="title-squad">Visão</span>
+        <p class="txt-gray">{{aboutInfo.visao}}</p>
+      </div>
+      <div class="squad">
+        <span class="icon-squad">♦</span>
+        <span class="title-squad">Valores</span>
+        <p class="txt-gray">{{aboutInfo.valores}}</p>
+      </div>
+    </div>
+  </div>
+  <div style="width: 100%; background-color: #fff; height: 150px"></div>
+  <div class="content-frase">
+    <div class="frase">
+      <p class="frase--conteudo"><img class="aspas" [src]="aboutInfo.aspas">{{aboutInfo.frase.conteudo}}</p>
+      <p class="frase--nome" style="  font-weight: bold;">{{aboutInfo.frase.nome}}</p>
+      <p class="frase--posicao" >{{aboutInfo.frase.posicao}}</p>
+    </div>
+    
+  </div>
+  <div class="halfImg" style="display: block; height: 50vh">
+    <img  [src]="aboutInfo.imgSecundaria" alt="teste">
+  </div>
+  <div style="display:flex; flex-direction: column; align-items:center; justify-content:center;">
+    <h2 class="principal-titulo" ><b>Nossos</b> Empreendimentos</h2>
+    <p class="sobre--frase" style="margin-top: 5px">Conheça nossos empreendimentos</p>
+    <div style="width:70% ;">
+      <app-slideCard  [images]="images"></app-slideCard>
+    </div>
+  
+  </div>
+
+  <div class="halfImg" style="display: block; height: 50vh">
+    <img  [src]="aboutInfo.imgAgendeSuaVisita" alt="teste">
+  </div>
+</div>

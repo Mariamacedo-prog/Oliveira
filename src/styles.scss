@@ -1,13 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Edu+VIC+WA+NT+Beginner:wght@400;500;700&family=Poiret+One&family=Questrial&family=Sorts+Mill+Goudy&display=swap');
 
-.logo{
-  width:  150px;
-  margin-right: 50px;
+:root {
+  --yellow:  rgb(219, 137, 7);
+  --green: #244837;
+  --golden: rgb(210, 187, 139);
+  --dark-gray: rgb(88, 88, 88);
 }
+
+
 html, body { height: 100%;  scroll-behavior: smooth;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 
 *{
   margin: 0;
@@ -19,9 +22,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .txt-gray{
   color: rgb(99, 99, 99);
 }
+
 .notStyle {
   text-decoration: none;
   list-style: none;
+}
+
+.logo{
+  width:  150px;
+  margin-right: 50px;
 }
 
 .buttonOrange{
@@ -30,8 +39,28 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   padding: 30px;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.halfImg{
+  margin: 0 ;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: inherit;
+  height: 400px;
+  img{
+    position: absolute;
+    left:50%;
+    right:50%;
+    top:50%;
+    width:100vw;
+    height: 400px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    filter: brightness(40%);
+  }
+}
+
+
 
 @keyframes fade {
   from {
@@ -44,3 +73,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 
+@media (max-width: 823px) {
+  .halfImg{
+    height: 40vh;
+    img{
+      top: 80px;
+      height: 40vh;
+    }
+  }
+}

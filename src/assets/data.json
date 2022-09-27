@@ -17,7 +17,8 @@
     },
     "logo": "../assets/logo.png",
     "nomeAno": "Oliveira Construtora e Incorporadora 2022",
-    "cnpj": "ooo.ooo/ooo-oo-ooo-oo"
+    "cnpj": "ooo.ooo/ooo-oo-ooo-oo",
+    "whatsLink": "https://api.whatsapp.com/send?L=pt&phone=5511983475047"
   },
   "listMenu": [
     {"name":"Home","link": "/"}, 
@@ -97,5 +98,21 @@
     "aspas": "../assets/aspas.png",
     "whats": "../assets/whats.png",
     "calendar": "../assets/calendar.png"
+  },
+  "pageSobre":{
+    "imgPrincipal": "https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2021/05/11150153/apto.jpg",
+    "imgSecundaria": "https://www.emporiotambo.com.br/pub/media/resized/1300x800/ves/blog/xapartamento-pequeno.jpg.pagespeed.ic.pJZaOnkNlu.webp",
+    "imgAgendeSuaVisita":"https://www.viagensecaminhos.com/wp-content/uploads/2017/12/predio-mais-alto-do-brasil-1.jpg",
+    "textoPrincipal": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic",
+    "missao":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ",
+    "visao":"galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic",
+    "valores": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1",
+    "aspas": "../assets/aspas.png",
+    "video": "../assets/Video.mp4",
+    "frase":{
+      "conteudo": "Nós firmamos aos clientes o compromisso de ofertar o melhor lar para as suas famílias. Oferecendo um excelente visual, localização, segurança e conforto. Respeitando sempre a necessidade e a escolha do cliente.",
+      "nome": "– GABRYEL OLIVEIRA    ",
+      "posicao": "Sócio Fundador da Oliveira"
+    }
   }
 }

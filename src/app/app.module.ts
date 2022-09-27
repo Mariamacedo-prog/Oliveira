@@ -11,11 +11,13 @@ import { CarouselModule } from './components/carousel/carousel.module';
 import { SlideCarouselModule } from './components/slideCarousel/slideCarousel.module';
 import { HomeComponent } from './pages/home/home.component';
 import { SlideCardModule } from './components/slideCard/slideCard.module';
+import { AboutComponent } from './pages/about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
