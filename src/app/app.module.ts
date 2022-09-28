@@ -12,12 +12,14 @@ import { SlideCarouselModule } from './components/slideCarousel/slideCarousel.mo
 import { HomeComponent } from './pages/home/home.component';
 import { SlideCardModule } from './components/slideCard/slideCard.module';
 import { AboutComponent } from './pages/about/about.component';
+import { PortalComponent } from './pages/portal/portal.component';
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    PortalComponent
   ],
   imports: [
     BrowserModule,

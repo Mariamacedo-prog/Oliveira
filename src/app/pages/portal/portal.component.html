@@ -1,0 +1,16 @@
+<div class="content">
+  <app-nav [activePage]="'Portal do Cliente'"></app-nav>
+  <div class="halfImg" style="display: block; height: 50vh">
+    <img  [src]="portalInfo.imgPrincipal" alt="teste">
+  </div>
+  <div class="squad-content" >
+    <h1 class="title-portal" >Portal do <b>Cliente</b></h1>
+    <div class="squad-principal">
+      <p id="txtPrincipalPortal" class="txt-principal"></p>
+
+      <p class="txt-gray">{{portalInfo.subTitle}}</p>
+      <a class="buttonOrange button-agendar" [href]="whatsLink" target="_blank" style="text-decoration: none"><b>ACESSAR PORTAL</b></a>
+    </div>
+  </div>
+  <div style="width: 100%; background-color: #fff; height: 150px"></div>
+</div>

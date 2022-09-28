@@ -114,5 +114,10 @@
       "nome": "– GABRYEL OLIVEIRA    ",
       "posicao": "Sócio Fundador da Oliveira"
     }
+  },
+  "pagePortal":{
+    "imgPrincipal": "https://veja.abril.com.br/wp-content/uploads/2020/04/shaking-hands-3091906_1920.jpg?quality=70&strip=info&resize=850,567",
+    "textPrincipal": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <b> built from scratch the industry's standard dummy text ever since the 1500s. </b>",
+    "subTitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   }
 }
