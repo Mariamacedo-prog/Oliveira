@@ -24,52 +24,59 @@
   </div>
 
 
-    <div  class="formulario" >
-      <p class="formulario-title">Envie uma mensagem que <b>iremos responde-lo em breve.</b></p>
-      <div class="formulario-area">
-        <div class="buttons-list">
-          <button class="{{activeOption !== 'Novo Cliente'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Novo Cliente'">QUERO SER CLIENTE</button>
-          <button class="{{activeOption !== 'Trabalhe Conosco'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Trabalhe Conosco'">TRABALHE CONOSCO</button>
-          <button class="{{activeOption !== 'Sou Cliente'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Sou Cliente'">SOU CLIENTE</button>
-          <button class="{{activeOption !== 'Sou Fornecedor'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Sou Fornecedor'">SOU FORNECEDOR</button>
-          <button class="{{activeOption !== 'Sou Terrenista'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Sou Terrenista'">SOU TERRENISTA</button>
+  <div  class="formulario" >
+    <p class="formulario-title">Envie uma mensagem que <b>iremos responde-lo em breve.</b></p>
+    <div class="formulario-area">
+      <div class="buttons-list">
+        <button class="{{activeOption !== 'Novo Cliente'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Novo Cliente'">QUERO SER CLIENTE</button>
+        <button class="{{activeOption !== 'Trabalhe Conosco'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Trabalhe Conosco'">TRABALHE CONOSCO</button>
+        <button class="{{activeOption !== 'Sou Cliente'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Sou Cliente'">SOU CLIENTE</button>
+        <button class="{{activeOption !== 'Sou Fornecedor'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Sou Fornecedor'">SOU FORNECEDOR</button>
+        <button class="{{activeOption !== 'Sou Terrenista'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'Sou Terrenista'">SOU TERRENISTA</button>
+      </div>
+    
+      <form [formGroup]="formData" class="formulario-principal" (ngSubmit)="onSubmit()" >
+        <div class="input-text">
+          <input type="email" formControlName="email" placeholder="Seu E-mail" >
+        </div>
+
+        <div class="input-text">
+          <input type="text" formControlName="name" placeholder="Seu nome" >
         </div>
       
-        <form [formGroup]="formData" class="formulario-principal" (ngSubmit)="onSubmit()" >
-          <div class="input-text">
-            <input type="email" formControlName="email" placeholder="Seu E-mail" >
-          </div>
+        <div class="input-text">
+          <input type="text" formControlName="telefone" placeholder="Telefone" (keyup)="maskTelefone()">
+        </div>
 
-          <div class="input-text">
-            <input type="text" formControlName="name" placeholder="Seu nome" >
-          </div>
-       
-          <div class="input-text">
-            <input type="text" formControlName="telefone" placeholder="Telefone" (keyup)="maskTelefone()">
-          </div>
+        <div class="input-text">
+          <textarea  style="height:100px" formControlName="messages" placeholder="Sua mensagem"></textarea>
+        </div>
 
-          <div class="input-text">
-            <textarea  style="height:100px" formControlName="messages" placeholder="Sua mensagem"></textarea>
-          </div>
-
-          <div>
-            <button type="submit" class="buttonOrange button-agendar" style="border: none; outline: none; cursor: pointer;">ENVIAR</button>
-          </div>
-         
-        </form>
-      </div>
-     
+        <div>
+          <button type="submit" class="buttonOrange button-agendar" style="border: none; outline: none; cursor: pointer;">ENVIAR</button>
+        </div>
+        
+      </form>
     </div>
-  <div  [style]="'display: block; height: 50vh; width: 100%; background: url(' + faleInfo.imgAgendeSuaVisita + ');   filter: brightness(20%); background-repeat: no-repeat; background-size: cover;   -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);'" >
+    
   </div>
 
+  <div  [style]="'display: block; height: 50vh; width: 100%; background: url(' + faleInfo.imgAgendeSuaVisita + ');   filter: brightness(20%); background-repeat: no-repeat; background-size: cover;   -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);'" >
+  </div>
   <div style=" display: flex; flex-direction: column; align-items:center;  height: 50vh; width: 100%; margin-top: -50vh; color: #fff; justify-content: space-evenly; position: relative;">
     <h3 class="title-agenda" >AGENDE UMA VISITA</h3>
     <div style="display: flex; flex-direction: column; align-items:center; ">
       <img [src]="locatioImg" alt="location" style="width: 30px; height: 30px" />
       <p class="endereco-agenda">LOCALIZAÇÃO: {{endereco.rua.toUpperCase() +', ' + 'N°'+ endereco.numero + ', '+ endereco.complemento.toUpperCase()}}</p>
-      <p class="endereco-agenda2">{{endereco.bairro.toUpperCase() +', ' + endereco.cidade.toUpperCase() + '/ '+ endereco.estado.toUpperCase()}}</p>
+      <p class="endereco-agenda">{{endereco.bairro.toUpperCase() +', ' + endereco.cidade.toUpperCase() + '/ '+ endereco.estado.toUpperCase()}}</p>
     </div>
      <a class="buttonOrange button-agendar" [href]="whatsLink" target="_blank" style="text-decoration: none; "><b>AGENDAR</b></a>
+  </div>
+
+  <div class="content-localizacao" >
+    <h3 class="title-agenda" >LOCALIZAÇÃO</h3>
+    <p class="endereco-agenda"> {{endereco.rua.toUpperCase() +', ' + 'N°'+ endereco.numero + ', '+ endereco.complemento.toUpperCase()}}</p>
+    <p class="endereco-agenda">{{endereco.bairro.toUpperCase() +', ' + endereco.cidade.toUpperCase() + '/ '+ endereco.estado.toUpperCase()}}</p>
+    <iframe *ngIf="faleInfo.iframeLink" [src]=" faleInfo.iframeLink"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </div>

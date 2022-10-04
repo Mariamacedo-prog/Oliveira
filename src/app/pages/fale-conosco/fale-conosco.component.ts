@@ -42,7 +42,6 @@ export class FaleConoscoComponent implements OnInit {
 
   onSubmit() {
       const email = this.formData.getRawValue();
-
       email.messages = ` 
       ${this.activeOption}
       Telefone: ${email.telefone} 
