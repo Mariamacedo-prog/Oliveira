@@ -1,0 +1,28 @@
+<div>
+  <div class="buttons-list">
+    <button class="{{activeOption !== 'novoCliente'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'novoCliente'">QUERO SER CLIENTE</button>
+    <button class="{{activeOption !== 'trabalhe'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'trabalhe'">TRABALHE CONOSCO</button>
+    <button class="{{activeOption !== 'cliente'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'cliente'">SOU CLIENTE</button>
+    <button class="{{activeOption !== 'fornecedor'? 'button-item' :'button-item-active' }}" (click)="activeOption = 'fornecedor'">SOU FORNECEDOR</button>
+  </div>
+
+  <form class="formulario-principal" >
+      <label>Email</label>
+      <input type="email" matInput placeholder="Ex. pat@example.com">
+
+        <label>Seu nome</label>
+        <input type="text" matInput placeholder="Maria Macedo">
+     
+        <label>Telefone</label>
+        <input type="text" matInput placeholder="(11) 98347-5047">
+      
+      <label> Sua mensagem</label>
+      <textarea matInput placeholder="Escreva aqui... " style="height:100px"></textarea>
+
+   
+    <div>
+      <button class="button-commun">ENVIAR</button>
+    </div>
+   
+  </form>
+</div>

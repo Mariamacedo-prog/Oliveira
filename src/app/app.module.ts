@@ -1,3 +1,5 @@
+import { FormularioModule } from './components/formulario/formulario.module';
+import { FormularioComponent } from './components/formulario/formulario.component';
 import { NavModule } from './components/nav/nav.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,15 +15,22 @@ import { HomeComponent } from './pages/home/home.component';
 import { SlideCardModule } from './components/slideCard/slideCard.module';
 import { AboutComponent } from './pages/about/about.component';
 import { PortalComponent } from './pages/portal/portal.component';
+import { FaleConoscoComponent } from './pages/fale-conosco/fale-conosco.component';
+import { EmpreendimentosComponent } from './pages/empreendimentos/empreendimentos.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    PortalComponent
+    PortalComponent,
+    FaleConoscoComponent,
+    EmpreendimentosComponent
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -29,6 +38,7 @@ import { PortalComponent } from './pages/portal/portal.component';
     NavModule,
     CarouselModule,
     SlideCarouselModule,
+    FormularioModule,
     SlideCardModule
   ],
   providers: [],

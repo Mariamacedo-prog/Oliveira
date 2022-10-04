@@ -95,7 +95,7 @@ $green:   var( --green);
 }
 
 .icon-squad{
-  position: absolute;
+ 
   font-size: 35px;
   margin-bottom: 15px;
   color: var( --yellow);
@@ -125,16 +125,9 @@ $green:   var( --green);
   color: #fff; 
   font-size: 55px ; 
   font-weight: bolder;
-  position: absolute;
-  bottom: 80%;
-  left: 30%;
 }
 
 .button-agendar{
-  position: absolute;
-  bottom: 5%;
-  right: 55%;
-  left: 40%;
   width: 250px;
   background-color: var(--yellow);
   color: #fff;
@@ -151,18 +144,6 @@ $green:   var( --green);
   color: #fff;
   margin: 0;
   padding:0;
-  position: absolute;
-  bottom: 40%;
-  left: 30%;
-}
-
-.endereco-agenda2{
-  color: #fff;
-  margin: 0;
-  padding:0;
-  position: absolute;
-  bottom: 30%;
-  left: 35%;
 }
 
 @media (max-width: 1260px) {
@@ -198,12 +179,9 @@ $green:   var( --green);
   }
 
   .title-agenda{
-    font-size: 45px ; 
-    bottom: 80%;
-    left: 20%;
+    font-size: 45px ;
   }
   .button-agendar{
-    bottom: 40%;
     width: 200px;
     font-size: 15px;
     padding: 2px;
@@ -211,35 +189,12 @@ $green:   var( --green);
 
   .endereco-agenda{
     font-size: 11px;
-    bottom: 70%;
-    left: 30%;
   }
-  
-  .endereco-agenda2{
-    font-size: 11px;
-    bottom: 60%;
-    left: 35%;
-  }
-
 }
 
 @media (max-width: 740px) {
   .title-agenda{
     font-size: 25px ; 
-    bottom: 80%;
-    left: 30%;
-  }
-  .button-agendar{
-    left: 35%;
-  }
-
-  .endereco-agenda{
-
-    left:20%;
-  }
-  
-  .endereco-agenda2{
-    left: 25%;
   }
 
   .squad--area{
@@ -267,23 +222,5 @@ $green:   var( --green);
 
   .principal-titulo{
     font-size: 30px;
-  }
-}
-
-@media (max-width: 450px) {
-  .title-agenda{
-    left: 10%;
-  }
-  .button-agendar{
-    left: 25%;
-  }
-
-  .endereco-agenda{
-
-    left:0%;
-  }
-  
-  .endereco-agenda2{
-    left: 5%;
   }
 }
