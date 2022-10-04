@@ -119,4 +119,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
       height: 40vh;
     }
   }
+
+  .input-text{
+    input {
+      height: 80px;
+      font-size: 21px;
+    }
+
+    textarea {
+      height: 210px;
+      font-size: 21px;
+    }
+  }
 }
