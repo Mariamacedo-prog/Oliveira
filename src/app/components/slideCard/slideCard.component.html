@@ -26,8 +26,8 @@
               [src]="item.img"
               [alt]="item.alt"
             />
-            <p class="absolute-text text-title" >{{item.text.title.toUpperCase()}}</p>
-            <p class="absolute-text text-subtitle" >{{item.text.subtitle}}</p>
+            <p class="absolute-text text-title" >{{item.text.title ? item.text.title.toUpperCase() : ''}}</p>
+            <p class="absolute-text text-subtitle" >{{item.text.subtitle ? item.text.subtitle : ''}}</p>
           </a>
     </div>
   </div>

@@ -146,6 +146,15 @@ $green:   var( --green);
   padding:0;
 }
 
+.image-agenda{
+  display: block;
+   height: 50vh; 
+   width: 100%; 
+  filter: brightness(20%); 
+  background-repeat: no-repeat !important; 
+  background-size: cover  !important; 
+}
+
 @media (max-width: 1260px) {
   .squad{
     padding: 10px;

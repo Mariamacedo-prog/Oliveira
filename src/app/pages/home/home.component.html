@@ -23,8 +23,8 @@
   </div>
 
   <div class="content-frase">
-    <div class="frase">
-      <p class="frase--conteudo"><img class="aspas" [src]="homeInfo.aspas">{{homeInfo.frase.conteudo}}</p>
+    <div class="frase" *ngIf="homeInfo.frase">
+      <p class="frase--conteudo" *ngIf="homeInfo.frase"><img class="aspas" [src]="homeInfo.aspas">{{homeInfo.frase.conteudo ? homeInfo.frase.conteudo : ''}}</p>
       <p class="frase--nome" style="  font-weight: bold;">{{homeInfo.frase.nome}}</p>
       <p class="frase--posicao" >{{homeInfo.frase.posicao}}</p>
     </div>

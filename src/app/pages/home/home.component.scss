@@ -132,7 +132,12 @@
 }
 
 
-@media (max-width: 915px) {
+@media (max-width: 865px) {
+  .empreendimento-titulo{
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
   .sobre--info{
     padding: 10px;
   }
@@ -165,10 +170,7 @@
 }
 
 @media (max-width: 740px) {
-  .empreendimento-titulo{
-    font-size: 30px;
-    margin-top: 10px;
-  }
+ 
   
   .content-sobre-info{
     flex-direction: column;
