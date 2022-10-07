@@ -10,17 +10,23 @@
     </div>
     <div  class="squad--area">
       <div class="squad">
-        <span class="icon-squad">♦</span>
+        <span class="icon-squad">
+          <img *ngIf="image64.gota" [src]="image64.gota" alt="gota" style="width: 20px; height: 20px" />
+        </span>
         <span class="title-squad">Missão</span>
         <p class="txt-gray">{{aboutInfo.missao}}</p>
       </div>
       <div class="squad leftMargin" >
-        <span class="icon-squad">●</span>
+        <span class="icon-squad" style="padding-bottom: 15px">
+          <img *ngIf="image64.bola" [src]="image64.bola" alt="bola" style="width: 15px; height: 15px" />
+        </span>
         <span class="title-squad">Visão</span>
         <p class="txt-gray">{{aboutInfo.visao}}</p>
       </div>
       <div class="squad leftMargin">
-        <span class="icon-squad">♦</span>
+        <span class="icon-squad">
+          <img *ngIf="image64.gota" [src]="image64.gota" alt="gota" style="width: 20px; height: 20px" />
+        </span>
         <span class="title-squad">Valores</span>
         <p class="txt-gray">{{aboutInfo.valores}}</p>
       </div>
@@ -69,7 +75,7 @@
   <div style=" display: flex; flex-direction: column; align-items:center;  height: 50vh; width: 100%; margin-top: -50vh; color: #fff; justify-content: space-evenly; position: relative;">
     <h3 class="title-agenda" >AGENDE UMA VISITA</h3>
     <div *ngIf="endereco.rua && endereco.numero && endereco.bairro && endereco.cidade && endereco.estado" style="display: flex; flex-direction: column; align-items:center; ">
-      <img [src]="locatioImg" alt="location" style="width: 30px; height: 30px" />
+      <img *ngIf="image64.location" [src]="image64.location" alt="location" style="width: 30px; height: 30px" />
       <p class="endereco-agenda">LOCALIZAÇÃO: {{ endereco.rua.toUpperCase() +', ' + 'N°'+ endereco.numero + ', '+  endereco.complemento.toUpperCase()}}</p>
       <p class="endereco-agenda">{{endereco.bairro.toUpperCase() +', ' + endereco.cidade.toUpperCase() + '/ '+ endereco.estado.toUpperCase()}}</p>
     </div>

@@ -1,1 +1,12 @@
-<p>empreendimentos works!</p>
+<div class="content">
+  <app-nav [activePage]="'Empreendimentos'"></app-nav>
+  <div class="halfImg" style="display: block; height: 50vh">
+    <img  [src]="pageInfo.imgPrincipal" alt="teste">
+  </div>
+
+  <h1 class="principal-titulo" >EMPREENDIMENTOS</h1>
+  <p class="txt-gray">{{pageInfo.texto1}}</p>
+  <div  [style]="' background: url(' + pageInfo.background + ');'">
+
+  </div>
+</div>

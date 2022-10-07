@@ -98,8 +98,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 
-
-
 @keyframes fade {
   from {
     opacity: 0.6;
@@ -130,5 +128,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
       height: 210px;
       font-size: 21px;
     }
+  }
+  .principal-titulo{
+    font-size: 30px;
   }
 }

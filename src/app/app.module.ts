@@ -18,6 +18,7 @@ import { PortalComponent } from './pages/portal/portal.component';
 import { FaleConoscoComponent } from './pages/fale-conosco/fale-conosco.component';
 import { EmpreendimentosComponent } from './pages/empreendimentos/empreendimentos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EmpreendimentosPageModule } from './pages/empreendimentos/empreendimentos.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     AboutComponent,
     PortalComponent,
-    FaleConoscoComponent,
-    EmpreendimentosComponent
+    FaleConoscoComponent
   ],
   imports: [
     FormsModule,
@@ -39,7 +39,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CarouselModule,
     SlideCarouselModule,
     FormularioModule,
-    SlideCardModule
+    SlideCardModule,
+    EmpreendimentosPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

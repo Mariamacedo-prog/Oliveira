@@ -8,12 +8,11 @@ import { PortalComponent } from './pages/portal/portal.component';
 const routes: Routes = [  { path: '', component: HomeComponent },
 { path: 'sobre', component: AboutComponent },
 { path: 'portal-cliente', component: PortalComponent },
-{ path: 'fale-conosco', component: FaleConoscoComponent }
-// {
-//   path: 'empreendimentos',
-//   loadChildren: () => import('../app/pages/obras/obras.module').then(m => m.ObrasModule)
-
-// },
+{ path: 'fale-conosco', component: FaleConoscoComponent },
+{
+  path: 'empreendimentos',
+  loadChildren: () => import('./pages/empreendimentos/empreendimentos.module').then(m => m.EmpreendimentosPageModule)
+}
 // { path: 'contato', component: ContatoComponent }
 ];
 

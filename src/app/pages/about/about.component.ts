@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   images: any = [];
   whatsLink: string = '';
   endereco: any = {};
-  locatioImg = '';
+  image64: any = {};
   constructor( private router: Router, private dataService: DataService) { }
 
   async ngOnInit(){
@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
       this.aboutInfo = data.pageSobre;
       this.whatsLink = data.oliveiraInfo.whatsLink;
       this.endereco = data.oliveiraInfo.endereco;
-      this.locatioImg = data.image64.location;
+      this.image64 = data.image64;
     })
 
   }
