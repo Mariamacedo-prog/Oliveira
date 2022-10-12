@@ -12,9 +12,32 @@
   overflow: hidden;
 }
 
+.card-empreendimento{
+  width: 40%;
+}
+@media (max-width: 1323px) {
+  .card-empreendimento{
+    width: 50%;
+  }
+}
+
+@media (max-width: 1223px) {
+  .card-empreendimento{
+    width: 60%;
+  }
+}
+
+@media (max-width: 923px) {
+  .card-empreendimento{
+    width: 80%;
+  }
+}
 
 @media (max-width: 823px) {
- 
+  .card-empreendimento{
+    width: 100%;
+  }
+  
   .principal-titulo{
     font-size: 30px;
   }

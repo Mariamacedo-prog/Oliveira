@@ -1,0 +1,17 @@
+<div class="content"  *ngIf="image !== {}">
+  <img class="card-img" *ngIf="image.poster" [src]="image.poster" />
+  
+  <div class="card-area">
+    <div class="card-info">
+      <h4><img *ngIf="imgIcon" [src]="imgIcon" alt="gota" style="width: 20px; height: 20px" />{{image.nome}}</h4>
+      <p *ngIf="image.endereco">{{image.endereco}}</p>
+      <p *ngIf="image.area">{{image.area}}</p>
+      <p > <span *ngFor="let i of image.info">{{i}} |</span>  </p>
+    </div>
+
+    <div class="card-area-button">
+      <span *ngIf="image.status">{{image.status}}</span>
+      <a *ngIf="image.id" [routerLink]="'/empreendimentos/'+ image.id">CONHEÇA</a>
+    </div>
+  </div>
+</div>

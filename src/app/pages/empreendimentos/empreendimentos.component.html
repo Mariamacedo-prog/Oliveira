@@ -9,4 +9,10 @@
   <div  [style]="' background: url(' + pageInfo.background + ');'">
 
   </div>
+
+  <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    <app-card-empreendimento class="card-empreendimento" *ngFor="let info of pageInfo.arrayEmpreendimentos" [image]="info"></app-card-empreendimento>
+
+  </div>
+   
 </div>

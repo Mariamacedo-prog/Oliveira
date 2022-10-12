@@ -1,0 +1,132 @@
+$dark-gray: rgb(230, 230, 230);
+
+.content{
+
+  display: flex;
+  flex-direction: column;
+  background-color:$dark-gray;
+  margin: 20px 0;
+}
+
+.card-img{
+  width: 100%;
+}
+
+.card-area{
+  display: flex;
+  padding: 30px 30px 0 30px;
+}
+
+.card-info{
+  flex: 1;
+  margin-bottom: 20px;
+  h4{
+    line-height: 40px;
+    width: max-content;
+    letter-spacing: 3px;
+    font-size: 28px;
+    border-bottom: 4px solid var(--yellow);
+  }
+
+  p{
+    margin: 3px;
+    letter-spacing: 1px;
+    color: var(--dark-gray);
+    font-size: 13px;
+  }
+}
+
+.card-area-button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  span{
+    letter-spacing: 1px;
+    color: var(--green);
+    font-weight: bold;
+
+  }
+
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 170px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+  }
+}
+
+@media (max-width: 903px) {
+  .content{
+   
+  }
+
+  .card-area{
+    padding: 0;
+  }
+  
+  .card-info{
+    margin-bottom: 0;
+    h4{
+      line-height: 25px;
+      width: max-content;
+      letter-spacing: 3px;
+      font-size: 23px;
+      border-bottom: 3px solid var(--yellow);
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .content{
+ 
+    margin:0 0 40px 0  ;
+  }
+
+  .card-area{
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .card-info{
+    margin-bottom: 0;
+    h4{
+      line-height: 20px;
+      width: max-content;
+      letter-spacing: 3px;
+      font-size: 18px;
+      border-bottom: 4px solid var(--yellow);
+    }
+  
+    p{
+      margin: 1px;
+      font-size: 13px;
+    }
+  }
+  
+  .card-area-button{
+    flex: 1;
+    margin-top: 20px;
+    span{
+      letter-spacing: 1px;
+      color: var(--green);
+      font-weight: bold;
+    }
+  
+    a{
+      font-size: 20px;
+      width: 100vw;
+    }
+  }
+  
+}

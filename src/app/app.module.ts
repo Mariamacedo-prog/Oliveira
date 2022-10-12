@@ -19,6 +19,8 @@ import { FaleConoscoComponent } from './pages/fale-conosco/fale-conosco.componen
 import { EmpreendimentosComponent } from './pages/empreendimentos/empreendimentos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmpreendimentosPageModule } from './pages/empreendimentos/empreendimentos.module';
+import { CardEmpreendimentoComponent } from './components/card-empreendimento/card-empreendimento.component';
+import { CardEmpreendimentoModule } from './components/card-empreendimento/card-empreendimento.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,8 @@ import { EmpreendimentosPageModule } from './pages/empreendimentos/empreendiment
     SlideCarouselModule,
     FormularioModule,
     SlideCardModule,
-    EmpreendimentosPageModule
+    EmpreendimentosPageModule,
+    CardEmpreendimentoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
