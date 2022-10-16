@@ -242,6 +242,154 @@
           {"local": "Planta 3", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/01-The_singular_paraiso-Planta_tipo-op_1-4_suites.jpg"},
           {"local": "Planta 4", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/Beyond-Planta_Duplex_Inferior-1.jpg"}
         ]
+      },
+      {
+        "id": 4,
+        "nome": "SLIM REDSETT",
+        "endereco": "Av ezequias bezerra de fatrias, 85 bl 20 ap 4, Vila São Paulo, Ferraz de vasconcelos/SP, CEP: 08507-220",
+        "area": "Área Privada entre 150 a 200 m²",
+        "info": [
+          "2 e 3 dormitórios",
+          "2 suites"
+        ],
+        "infoAdicional":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+        "link": "http://www.slimcachoeirinha.com.br/",
+        "vantagem": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "qualidade":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "diferencial":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "status": "FUTURO LANÇAMENTO",
+        "iframe":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5105832839595!2d-46.63780567612063!3d-23.55009903571437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa5b004689%3A0x37c720ec525c8bd9!2zU8Op!5e0!3m2!1spt-BR!2sbr!4v1664851574823!5m2!1spt-BR!2sbr'  style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+        "poster": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg",
+        "galeria": [
+          {"local": "Quarto 1", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Quarto-de-Casal-com-Toucador-e-Espelho-e-Candeeiros-em-Dourado-Pachecos-Mobiliario-1.jpg?fit=2000%2C1500&ssl=1"},
+          {"local": "Quarto 2", "img": "https://www.decorfacil.com/wp-content/uploads/2021/11/20211123quarto-de-casal-com-cores-neutras-capa2.jpg"},
+          {"local": "Quarto 3", "img": "https://dmhxz00kguanp.cloudfront.net/fotos/136023/quarto-infantil-estrelinha-rosa-291045.jpg"},
+          {"local": "Sala", "img": "https://fotos.vivadecora.com.br/decoracao-sala-de-estar-studioeloyefreitas-13428-proportional-height_cover_medium.jpg"},
+          {"local": "Sala de Jogos", "img": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg"},
+          {"local": "Sala de Estar", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Sala-de-Estar-com-Mesa-de-Centro-Quadrada-e-Puff-em-Castanho-Pachecos-Mobiliario-1.jpg?resize=1024%2C768&ssl=1"},
+          {"local": "Elevador", "img": "https://blog.otis.com.br/wp-content/uploads/2019/11/Otis.jpg"},
+          {"local": "Academia", "img": "https://scproduction.s3.sa-east-1.amazonaws.com/wysiwyg_uploads/cms/images/2018/10/01/19/07-h9ytse3i.JPG"},
+          {"local": "Piscina", "img": "https://f.i.uol.com.br/fotografia/2022/02/17/1645131911620eb887a2669_1645131911_5x2_rt.jpg"},
+          {"local": "Churrasqueira", "img": "https://epbchurrasqueiras.com.br/wp-content/uploads/2022/08/20220827_113224.jpg"},
+          {"local": "Parquinho", "img": "https://magicgramas.com.br/blog/wp-content/uploads/2018/05/2.jpg"}
+        ],
+        "planta":[
+          {"local": "Planta 1", "img": "https://www.tarjab.com.br/wp-content/uploads/2022/01/plantas-flexiveis-o-que-e-e-como-aproveitar-no-seu-imovel-1.jpg"},
+          {"local": "Planta 2", "img": "https://i.pinimg.com/originals/78/92/cf/7892cff1cca7d32ec5f406d13ed8111e.jpg"},
+          {"local": "Planta 3", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/01-The_singular_paraiso-Planta_tipo-op_1-4_suites.jpg"},
+          {"local": "Planta 4", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/Beyond-Planta_Duplex_Inferior-1.jpg"}
+        ]
+      }, 
+      {
+        "id": 5,
+        "nome": "SLIM FERRAZ",
+        "endereco": "Av ezequias bezerra de fatrias, 85 bl 20 ap 4, Vila São Paulo, Ferraz de vasconcelos/SP, CEP: 08507-220",
+        "area": "Área Privada entre 150 a 200 m²",
+        "info": [
+          "2 e 3 dormitórios",
+          "2 suites"
+        ],
+        "infoAdicional":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+        "link": "http://www.slimcachoeirinha.com.br/",
+        "vantagem": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "qualidade":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "diferencial":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "status": "EM ANDAMENTO",
+        "iframe":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5105832839595!2d-46.63780567612063!3d-23.55009903571437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa5b004689%3A0x37c720ec525c8bd9!2zU8Op!5e0!3m2!1spt-BR!2sbr!4v1664851574823!5m2!1spt-BR!2sbr'  style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+        "poster": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg",
+        "galeria": [
+          {"local": "Quarto 1", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Quarto-de-Casal-com-Toucador-e-Espelho-e-Candeeiros-em-Dourado-Pachecos-Mobiliario-1.jpg?fit=2000%2C1500&ssl=1"},
+          {"local": "Quarto 2", "img": "https://www.decorfacil.com/wp-content/uploads/2021/11/20211123quarto-de-casal-com-cores-neutras-capa2.jpg"},
+          {"local": "Quarto 3", "img": "https://dmhxz00kguanp.cloudfront.net/fotos/136023/quarto-infantil-estrelinha-rosa-291045.jpg"},
+          {"local": "Sala", "img": "https://fotos.vivadecora.com.br/decoracao-sala-de-estar-studioeloyefreitas-13428-proportional-height_cover_medium.jpg"},
+          {"local": "Sala de Jogos", "img": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg"},
+          {"local": "Sala de Estar", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Sala-de-Estar-com-Mesa-de-Centro-Quadrada-e-Puff-em-Castanho-Pachecos-Mobiliario-1.jpg?resize=1024%2C768&ssl=1"},
+          {"local": "Elevador", "img": "https://blog.otis.com.br/wp-content/uploads/2019/11/Otis.jpg"},
+          {"local": "Academia", "img": "https://scproduction.s3.sa-east-1.amazonaws.com/wysiwyg_uploads/cms/images/2018/10/01/19/07-h9ytse3i.JPG"},
+          {"local": "Piscina", "img": "https://f.i.uol.com.br/fotografia/2022/02/17/1645131911620eb887a2669_1645131911_5x2_rt.jpg"},
+          {"local": "Churrasqueira", "img": "https://epbchurrasqueiras.com.br/wp-content/uploads/2022/08/20220827_113224.jpg"},
+          {"local": "Parquinho", "img": "https://magicgramas.com.br/blog/wp-content/uploads/2018/05/2.jpg"}
+        ],
+        "planta":[
+          {"local": "Planta 1", "img": "https://www.tarjab.com.br/wp-content/uploads/2022/01/plantas-flexiveis-o-que-e-e-como-aproveitar-no-seu-imovel-1.jpg"},
+          {"local": "Planta 2", "img": "https://i.pinimg.com/originals/78/92/cf/7892cff1cca7d32ec5f406d13ed8111e.jpg"},
+          {"local": "Planta 3", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/01-The_singular_paraiso-Planta_tipo-op_1-4_suites.jpg"},
+          {"local": "Planta 4", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/Beyond-Planta_Duplex_Inferior-1.jpg"}
+        ]
+      },
+      {
+        "id": 6,
+        "nome": "SLIM BABUZANE",
+        "endereco": "Av ezequias bezerra de fatrias, 85 bl 20 ap 4, Vila São Paulo, Ferraz de vasconcelos/SP, CEP: 08507-220",
+        "area": "Área Privada entre 150 a 200 m²",
+        "info": [
+          "2 e 3 dormitórios",
+          "2 suites"
+        ],
+        "infoAdicional":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+        "link": "http://www.slimcachoeirinha.com.br/",
+        "vantagem": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "qualidade":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "diferencial":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "status": "ENTREGUE",
+        "iframe":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5105832839595!2d-46.63780567612063!3d-23.55009903571437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa5b004689%3A0x37c720ec525c8bd9!2zU8Op!5e0!3m2!1spt-BR!2sbr!4v1664851574823!5m2!1spt-BR!2sbr'  style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+        "poster": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg",
+        "galeria": [
+          {"local": "Quarto 1", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Quarto-de-Casal-com-Toucador-e-Espelho-e-Candeeiros-em-Dourado-Pachecos-Mobiliario-1.jpg?fit=2000%2C1500&ssl=1"},
+          {"local": "Quarto 2", "img": "https://www.decorfacil.com/wp-content/uploads/2021/11/20211123quarto-de-casal-com-cores-neutras-capa2.jpg"},
+          {"local": "Quarto 3", "img": "https://dmhxz00kguanp.cloudfront.net/fotos/136023/quarto-infantil-estrelinha-rosa-291045.jpg"},
+          {"local": "Sala", "img": "https://fotos.vivadecora.com.br/decoracao-sala-de-estar-studioeloyefreitas-13428-proportional-height_cover_medium.jpg"},
+          {"local": "Sala de Jogos", "img": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg"},
+          {"local": "Sala de Estar", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Sala-de-Estar-com-Mesa-de-Centro-Quadrada-e-Puff-em-Castanho-Pachecos-Mobiliario-1.jpg?resize=1024%2C768&ssl=1"},
+          {"local": "Elevador", "img": "https://blog.otis.com.br/wp-content/uploads/2019/11/Otis.jpg"},
+          {"local": "Academia", "img": "https://scproduction.s3.sa-east-1.amazonaws.com/wysiwyg_uploads/cms/images/2018/10/01/19/07-h9ytse3i.JPG"},
+          {"local": "Piscina", "img": "https://f.i.uol.com.br/fotografia/2022/02/17/1645131911620eb887a2669_1645131911_5x2_rt.jpg"},
+          {"local": "Churrasqueira", "img": "https://epbchurrasqueiras.com.br/wp-content/uploads/2022/08/20220827_113224.jpg"},
+          {"local": "Parquinho", "img": "https://magicgramas.com.br/blog/wp-content/uploads/2018/05/2.jpg"}
+        ],
+        "planta":[
+          {"local": "Planta 1", "img": "https://www.tarjab.com.br/wp-content/uploads/2022/01/plantas-flexiveis-o-que-e-e-como-aproveitar-no-seu-imovel-1.jpg"},
+          {"local": "Planta 2", "img": "https://i.pinimg.com/originals/78/92/cf/7892cff1cca7d32ec5f406d13ed8111e.jpg"},
+          {"local": "Planta 3", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/01-The_singular_paraiso-Planta_tipo-op_1-4_suites.jpg"},
+          {"local": "Planta 4", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/Beyond-Planta_Duplex_Inferior-1.jpg"}
+        ]
+      }, 
+      {
+        "id": 7,
+        "nome": "SLIM DOM PEDRO 2",
+        "endereco": "Av ezequias bezerra de fatrias, 85 bl 20 ap 4, Vila São Paulo, Ferraz de vasconcelos/SP, CEP: 08507-220",
+        "area": "Área Privada entre 150 a 200 m²",
+        "info": [
+          "2 e 3 dormitórios",
+          "2 suites"
+        ],
+        "infoAdicional":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+        "link": "http://www.slimcachoeirinha.com.br/",
+        "vantagem": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "qualidade":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "diferencial":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature fass",
+        "status": "EM ANDAMENTO",
+        "iframe":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5105832839595!2d-46.63780567612063!3d-23.55009903571437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa5b004689%3A0x37c720ec525c8bd9!2zU8Op!5e0!3m2!1spt-BR!2sbr!4v1664851574823!5m2!1spt-BR!2sbr'  style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+        "poster": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg",
+        "galeria": [
+          {"local": "Quarto 1", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Quarto-de-Casal-com-Toucador-e-Espelho-e-Candeeiros-em-Dourado-Pachecos-Mobiliario-1.jpg?fit=2000%2C1500&ssl=1"},
+          {"local": "Quarto 2", "img": "https://www.decorfacil.com/wp-content/uploads/2021/11/20211123quarto-de-casal-com-cores-neutras-capa2.jpg"},
+          {"local": "Quarto 3", "img": "https://dmhxz00kguanp.cloudfront.net/fotos/136023/quarto-infantil-estrelinha-rosa-291045.jpg"},
+          {"local": "Sala", "img": "https://fotos.vivadecora.com.br/decoracao-sala-de-estar-studioeloyefreitas-13428-proportional-height_cover_medium.jpg"},
+          {"local": "Sala de Jogos", "img": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg"},
+          {"local": "Sala de Estar", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Sala-de-Estar-com-Mesa-de-Centro-Quadrada-e-Puff-em-Castanho-Pachecos-Mobiliario-1.jpg?resize=1024%2C768&ssl=1"},
+          {"local": "Elevador", "img": "https://blog.otis.com.br/wp-content/uploads/2019/11/Otis.jpg"},
+          {"local": "Academia", "img": "https://scproduction.s3.sa-east-1.amazonaws.com/wysiwyg_uploads/cms/images/2018/10/01/19/07-h9ytse3i.JPG"},
+          {"local": "Piscina", "img": "https://f.i.uol.com.br/fotografia/2022/02/17/1645131911620eb887a2669_1645131911_5x2_rt.jpg"},
+          {"local": "Churrasqueira", "img": "https://epbchurrasqueiras.com.br/wp-content/uploads/2022/08/20220827_113224.jpg"},
+          {"local": "Parquinho", "img": "https://magicgramas.com.br/blog/wp-content/uploads/2018/05/2.jpg"}
+        ],
+        "planta":[
+          {"local": "Planta 1", "img": "https://www.tarjab.com.br/wp-content/uploads/2022/01/plantas-flexiveis-o-que-e-e-como-aproveitar-no-seu-imovel-1.jpg"},
+          {"local": "Planta 2", "img": "https://i.pinimg.com/originals/78/92/cf/7892cff1cca7d32ec5f406d13ed8111e.jpg"},
+          {"local": "Planta 3", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/01-The_singular_paraiso-Planta_tipo-op_1-4_suites.jpg"},
+          {"local": "Planta 4", "img": "https://www.ryazbek.com.br/wp-content/uploads/2020/02/Beyond-Planta_Duplex_Inferior-1.jpg"}
+        ]
       }
     ]
   }

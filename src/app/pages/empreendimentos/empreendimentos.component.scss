@@ -13,9 +13,55 @@
 }
 
 .card-empreendimento{
-  width: 40%;
+  width: 50vw;
 }
+
+.card-empreendimento-area{
+  width: 100vw;
+  background-image: url(../../../assets/images/empreendimento.png);
+}
+
+
+.buttons-list{
+  display: flex;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.button-item{
+  border: none;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(159, 157, 157);
+  background-color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+}
+
+.button-item-active{
+  border: none;
+  width: 100%;
+  height: 50px;
+ color: #000;
+ background-color: #fff;
+ font-weight: bold;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  
+  line-height: 17px;
+
+  letter-spacing: 3px;
+  font-size: 13px;
+  border-bottom: 4px solid var(--yellow);
+}
+
 @media (max-width: 1323px) {
+
   .card-empreendimento{
     width: 50%;
   }
@@ -28,6 +74,20 @@
 }
 
 @media (max-width: 923px) {
+  .buttons-list{
+    width: 100%;
+  }
+
+  .button-item{
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    margin: 0 10px;
+  }
+
+  .button-item-active{
+    margin: 0 10px;
+  }
+  
   .card-empreendimento{
     width: 80%;
   }

@@ -9,9 +9,16 @@
   <div  [style]="' background: url(' + pageInfo.background + ');'">
 
   </div>
+  <div class="buttons-list">
+    <button class="{{activeOption !== 'TODOS'? 'button-item' :'button-item-active' }}" (click)=" filterEmpreendimento('TODOS')">TODOS</button>
+    <button class="{{activeOption !== 'EM ANDAMENTO'? 'button-item' :'button-item-active' }}" (click)="filterEmpreendimento('EM ANDAMENTO')">EM ANDAMENTO</button>
+    <button class="{{activeOption !== 'FUTURO LANÇAMENTO'? 'button-item' :'button-item-active' }}" (click)="filterEmpreendimento('FUTURO LANÇAMENTO')">FUTUROS LANÇAMENTOS</button>
+    <button class="{{activeOption !== 'ENTREGUE'? 'button-item' :'button-item-active' }}" (click)="filterEmpreendimento('ENTREGUE')">ENTREGUES</button>
+  </div>
 
-  <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
-    <app-card-empreendimento class="card-empreendimento" *ngFor="let info of pageInfo.arrayEmpreendimentos" [image]="info"></app-card-empreendimento>
+
+  <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;" class="card-empreendimento-area">
+    <app-card-empreendimento class="card-empreendimento" *ngFor="let info of empreendimentoFilter" [image]="info"></app-card-empreendimento>
 
   </div>
    
