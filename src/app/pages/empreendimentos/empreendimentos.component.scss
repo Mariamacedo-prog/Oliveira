@@ -46,9 +46,9 @@
   border: none;
   width: 100%;
   height: 50px;
- color: #000;
- background-color: #fff;
- font-weight: bold;
+  color: #000;
+  background-color: #fff;
+  font-weight: bold;
   margin: 0 20px;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -59,6 +59,41 @@
   font-size: 13px;
   border-bottom: 4px solid var(--yellow);
 }
+
+.vantagens-area{
+  padding: 50px 180px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  background-color: var(--green);
+  h4{
+    color: #fff;
+    font-size: 35px;
+    margin: 20px 0;
+  }
+  p{
+    margin: 20px 0 70px 0 ;
+    text-align: center;
+    color: rgb(204, 204, 204);
+  }
+}
+
+.img--faleConosco{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  img{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+  }
+  span{
+    color: #fff;
+  }
+}
+
 
 @media (max-width: 1323px) {
 
@@ -90,6 +125,18 @@
   
   .card-empreendimento{
     width: 80%;
+  }
+
+  .vantagens-area{
+    padding: 10px 20px;
+    h4{
+      font-size: 25px;
+      margin: 40px 0;
+    }
+    p{
+      margin: 10px 0 20px 0;
+      font-size: 16px;
+    }
   }
 }
 

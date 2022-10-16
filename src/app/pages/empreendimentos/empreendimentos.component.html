@@ -19,7 +19,22 @@
 
   <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;" class="card-empreendimento-area">
     <app-card-empreendimento class="card-empreendimento" *ngFor="let info of empreendimentoFilter" [image]="info"></app-card-empreendimento>
+  </div>
+  
+  <div  class="vantagens-area">
+    <h4>Vantagens de ser cliente Oliveira</h4>
+    <p >{{pageInfo.vantagemTexto}}</p>
+    <div style="display: flex;">
+      <div class="img--faleConosco">
+        <img [src]="pageInfo.calendar">
+        <span>Agende uma <b>Visita</b></span>
+      </div>
+      <div class="img--faleConosco" style="margin-left: 80px"> 
+      
+        <img [src]="pageInfo.whats">
+        <span><b>Converse</b> Conosco</span>
+      </div>
+    </div>
 
   </div>
-   
 </div>
