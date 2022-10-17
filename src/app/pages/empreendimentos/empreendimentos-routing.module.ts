@@ -8,14 +8,9 @@ const routes: Routes = [
     component: EmpreendimentosComponent,
     children: [
       {
-        path: 'page',
-        loadChildren: () => import('./empreendimentos.module').then(m => m.EmpreendimentosPageModule)
+        path: ':id',
+        component: EmpreendimentosComponent,
       },
-      {
-        path: '',
-        redirectTo: 'empreendimentos',
-        pathMatch: 'full'
-      }
     ]
   },
   // {
@@ -24,7 +19,7 @@ const routes: Routes = [
   // },
   {
     path: '',
-    redirectTo: '',
+    redirectTo: 'empreendimentos',
     pathMatch: 'full'
   }
 ];
