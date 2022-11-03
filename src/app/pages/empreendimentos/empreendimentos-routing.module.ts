@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EmpreendimentoIndividualComponent } from './empreendimento-individual/empreendimento-individual.component';
 import { EmpreendimentosComponent } from './empreendimentos.component';
 
 const routes: Routes = [
   {
     path: '',
     component: EmpreendimentosComponent,
-    children: [
-      {
-        path: ':id',
-        component: EmpreendimentosComponent,
-      },
-    ]
+  },
+  {
+    path: ':id',
+    component: EmpreendimentoIndividualComponent,
   },
   // {
   //   path: 'meus-pacientes',

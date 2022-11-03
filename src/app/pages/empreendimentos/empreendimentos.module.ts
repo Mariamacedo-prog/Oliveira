@@ -6,6 +6,10 @@ import { EmpreendimentosPageRoutingModule } from './empreendimentos-routing.modu
 import { EmpreendimentosComponent } from './empreendimentos.component';
 import { NavModule } from 'src/app/components/nav/nav.module';
 import { CardEmpreendimentoModule } from 'src/app/components/card-empreendimento/card-empreendimento.module';
+import { EmpreendimentoIndividualComponent } from './empreendimento-individual/empreendimento-individual.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   imports: [
@@ -16,8 +20,8 @@ import { CardEmpreendimentoModule } from 'src/app/components/card-empreendimento
     CardEmpreendimentoModule,
     EmpreendimentosPageRoutingModule
   ],
-  declarations: [EmpreendimentosComponent],
-  exports: [EmpreendimentosComponent]
+  declarations: [EmpreendimentosComponent, EmpreendimentoIndividualComponent],
+  exports: [EmpreendimentosComponent, EmpreendimentoIndividualComponent]
 
 })
 export class EmpreendimentosPageModule {}

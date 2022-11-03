@@ -1,0 +1,68 @@
+<app-nav [activePage]="'Empreendimentos'"></app-nav>
+<div class="content">
+  <div class="halfImg" style="display: block; height: 50vh">
+    <img  [src]="empreendimento.poster" alt="teste">
+  </div>
+
+  <div class="content-empreendimento-info">
+    <div class="div-empreendimento-info">
+      <div class="image--oliveira">
+        <div class="golden--div"></div>
+        <img  [src]="empreendimento.poster" alt="img empreendimento">
+      </div>
+      <div class="info--oliveira">
+        <h4>
+          <img *ngIf="imgBase64.gota" [src]="imgBase64.gota" alt="gota" style="width: 20px; height: 20px" /> {{empreendimento.nome}}
+        </h4>
+        <ul>
+          <li>{{empreendimento.endereco}}</li>
+          <li>{{empreendimento.area}}</li>
+          <li *ngFor="let i of empreendimento.info">{{i}}</li>
+        </ul>
+        <div class="golden-border" ></div>
+        <p class="txt-gray">{{empreendimento.infoAdicional}}</p>
+        <a [href]="empreendimento.link" target="_blank" > <b>SAIBA MAIS</b></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="empreendimento--vantagem--area">
+    <div  class="squad--area">
+      <div class="squad">
+        <span class="icon-squad">
+          <img *ngIf="imgBase64.gota" [src]="imgBase64.gota" alt="gota" style="width: 20px; height: 20px" />
+        </span>
+        <span class="title-squad">Vantagem</span>
+        <p class="txt-gray">{{empreendimento.vantagem}}</p>
+      </div>
+      <div class="squad leftMargin" >
+        <span class="icon-squad" style="padding-bottom: 15px">
+          <img *ngIf="imgBase64.bola" [src]="imgBase64.bola" alt="bola" style="width: 15px; height: 15px" />
+        </span>
+        <span class="title-squad">Diferencial</span>
+        <p class="txt-gray">{{empreendimento.diferencial}}</p>
+      </div>
+      <div class="squad leftMargin">
+        <span class="icon-squad">
+          <img *ngIf="imgBase64.gota" [src]="imgBase64.gota" alt="gota" style="width: 20px; height: 20px" />
+        </span>
+        <span class="title-squad">Qualidade</span>
+        <p class="txt-gray">{{empreendimento.qualidade}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="empreendimento--status--area">
+    <div class="status--item" *ngFor="let s of statusArray" [style]="s.stt === 'Incompleto'? 'opacity: 0.4' : 'opacity: 1'">
+      <span [style]="s.stt === 'Completo' ? 'background-color: rgb(75,94, 84)' :  'background-color: var(--yellow)'">
+        <img [src]="s.icon" />
+      </span>
+
+      <div>
+        <p>{{s.etapa}}</p>
+        <h4>{{s.type}}</h4>
+        <span>{{s.stt}}</span>
+      </div>
+    </div>
+  </div>
+</div>
