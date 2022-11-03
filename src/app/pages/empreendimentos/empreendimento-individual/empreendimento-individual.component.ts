@@ -49,9 +49,18 @@ export class EmpreendimentoIndividualComponent implements OnInit {
       this.empreendimento = empreendimentos.find((item: any )=> item.id == this.id);
       console.log(this.id, this.empreendimento);
       this.getStatus();
+
+      this.stringToHTML(this.empreendimento.iframe)
     })
 
   }
+
+  stringToHTML (str: string) {
+    let example = document.getElementById('localizacao');
+    if(example !== null){
+      example.innerHTML = str
+    }
+  };
 
   getStatus(){
     if(this.empreendimento.status === "EM ANDAMENTO"){
@@ -135,5 +144,4 @@ export class EmpreendimentoIndividualComponent implements OnInit {
       ];
     }
   }
-
 }

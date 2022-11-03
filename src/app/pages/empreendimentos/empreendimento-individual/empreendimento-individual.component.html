@@ -65,4 +65,17 @@
       </div>
     </div>
   </div>
+
+  <div class="galeria--area">
+    <h3 class="title" style="  color: #fff;">SLIM GALERIA</h3>
+    <div class="galeria">
+      <img  *ngFor="let g of empreendimento.galeria"  [src]="g.img" [alt]="g.local">
+    </div>
+  </div>
+
+  <div class="localizacao--area">
+    <h3 class="title" style="  color: #000;">LOCALIZAÇÃO</h3>
+    <p>{{empreendimento.endereco}}</p>
+    <div id="localizacao"></div>
+  </div>
 </div>
