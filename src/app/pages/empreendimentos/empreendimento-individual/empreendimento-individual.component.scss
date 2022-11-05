@@ -28,14 +28,12 @@
     width: 450px;
     height: 300px;
   }
-
 }
 
 .info--oliveira{
   display: flex;
   flex-direction: column;
   padding:  0 150px;
-  
   h4{
     line-height: 40px;
     width: max-content;
@@ -43,14 +41,12 @@
     font-size: 28px;
     border-bottom: 4px solid var(--yellow);
   }
-
   ul{
     margin: 20px;
     list-style: none;
     font-size: 17px;
     line-height: 35px;
   }
-
   ul li::before {
     content: "\2022";  
     color: var(--yellow); 
@@ -99,7 +95,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .squad{
   display: flex;
@@ -219,7 +214,6 @@
     width: 25%;
     height: auto;
     padding: 10px;
-
     cursor: pointer;
   }
 }
@@ -229,7 +223,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .localizacao--area{
@@ -251,27 +244,6 @@
   }
 }
 
-
-.modal{
-  z-index: 99999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color:rgba(0, 0, 0, 0.8);
-  width: 100vw;
-  height: 100vh;
-}
-
-.modal-body{
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-   height: 100%;
-
-   img{
-    max-height: 80%;
-   }
-}
 
 @media (max-width: 1223px) {
   .squad--area{
@@ -348,6 +320,7 @@
     }
   }
 }
+
 @media (max-width: 850px) {
   .title{
     padding: 50px 0; 
