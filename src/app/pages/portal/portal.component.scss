@@ -10,7 +10,7 @@
   background-color: #fff;
   padding: 20px;
   z-index: 2;
-  width: 40%;
+  width: 30%;
   border: 1px solid #ccc;
   margin-bottom: 45px;
   box-shadow: 5px 5px 40px rgb(0, 0, 0);
@@ -53,8 +53,16 @@
   }
 }
 
-
-
+@media (max-width: 1200px) {
+  .squad-principal{
+    width: 40%;
+  }
+}
+@media (max-width: 900px) {
+  .squad-principal{
+    width: 50%;
+  }
+}
 @media (max-width: 823px) {
    .squad-principal{
      padding: 10px;

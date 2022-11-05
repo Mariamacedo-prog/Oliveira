@@ -20,20 +20,24 @@
       </div>
     
       <form [formGroup]="formData" class="formulario-principal" (ngSubmit)="onSubmit()" >
-        <div class="input-text">
-          <input type="email" formControlName="email" placeholder="Seu E-mail" >
-        </div>
+        <div class="input--area" >
 
-        <div class="input-text">
-          <input type="text" formControlName="name" placeholder="Seu nome" >
+          <div class="input-text">
+            <input type="text" formControlName="name" placeholder="Seu nome" >
+          </div>
+               
+          <div class="input-text">
+            <input type="text" formControlName="telefone" placeholder="Telefone" (keyup)="maskTelefone()">
+          </div>
         </div>
-      
-        <div class="input-text">
-          <input type="text" formControlName="telefone" placeholder="Telefone" (keyup)="maskTelefone()">
-        </div>
-
-        <div class="input-text">
-          <textarea  style="height:100px" formControlName="messages" placeholder="Sua mensagem"></textarea>
+        <div class="input--area" >
+    
+          <div class="input-text">
+            <input type="email" formControlName="email" placeholder="Seu E-mail" >
+          </div>
+          <div class="input-text">
+            <textarea  style="height:100px" formControlName="messages" placeholder="Sua mensagem"></textarea>
+          </div>
         </div>
 
         <div>
