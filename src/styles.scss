@@ -52,7 +52,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     right:50%;
     top:50%;
     width:100vw;
-    height: 400px;
+    height: 600px;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
@@ -110,11 +110,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 @media (max-width: 823px) {
+
+
   .halfImg{
-    height: 40vh;
+    height: 200px;
     img{
       top: 80px;
-      height: 40vh;
+      height: 400px;
     }
   }
 

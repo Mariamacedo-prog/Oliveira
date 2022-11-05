@@ -1,0 +1,19 @@
+
+<div class="movieRow" >
+
+  <div >
+    <div class="movieRow--listArea" >
+      <div class="testeimagemPrincipal" >
+        <img  class="testeImagemApagadaEsquerda" (click)="handleLeftArrow ()" *ngIf="itemAtual !== 0" [src]="images[itemAtual - 1].img" >
+        <div  class="divPrincipal" >
+          <img [src]="arrowLeft"  class="buttonImg" (click)="handleLeftArrow ()">
+          <img class="testeimagem" [src]="images[itemAtual].img" [alt]="images[itemAtual].alt" > 
+          <img [src]="arrowRightIcon"  class="buttonImg" (click)="handleRightArrow ()">
+        </div>
+        <div class="testeImagemApagadaDireita"  (click)="handleRightArrow ()">
+          <img class="imagemApagadaDireita" *ngIf="itemAtual < images.length - 1" [alt]="images[itemAtual]"  style="width: calc(100% -300px )" [src]="images[itemAtual + 1].img" [alt]="images[itemAtual + 1].alt"  >
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,228 @@
+$display: none;
+
+.movieRow {
+
+  overflow: hidden;
+  max-height: 100vh;
+  padding: 0;
+}
+
+/**********************
+Como foi feito a area de rolagem dos filmes: listArea, liste e item;
+**********************/
+.divPrincipal{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-active{
+  widows: 900px;
+  transform: scale(1);
+  filter: grayscale(0);
+
+}
+
+.title-active{
+  margin-top:10px;
+  font-size: 21px;
+  color:  rgb(166, 154, 146);
+  letter-spacing: 1px;
+  display: block;
+}
+
+.btn-more{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px 10px ;
+  color: #fff;
+  font-size: 15px;
+  background-color: rgb(166, 154, 146);
+  transition: all 0.4s ease;
+}
+
+.btn-more:hover{
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgb(178, 164, 155);
+}
+
+
+
+
+/**********************
+Como foi feito a area de rolagem dos filmes: listArea, liste e item;
+**********************/
+
+
+.testeImagemApagadaEsquerda{
+  overflow: hidden;
+  width: 600px;
+  left: -300px;
+  position:absolute;
+  transition: all ease 0.2s;
+
+  height: 300px;
+  opacity: 0.5;
+}
+
+.testeImagemApagadaDireita{
+  overflow-x: hidden;
+  width:600px;
+  position:absolute;
+  right: 0;
+  opacity: 0.5;
+  transition: all ease 0.2s;
+
+}
+
+.imagemApagadaDireita{
+  height: 300px;
+  width:600px;
+  margin-left: 300px;
+}
+
+.testeimagemPrincipal{
+
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testeimagem{
+  width: 700px;
+  height: 400px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  margin-top: 60px;
+}
+
+.testeButton{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.info--title--caris{
+  font-size:30px; 
+  margin-bottom:-30px; 
+  letter-spacing: 3px; 
+  display: flex; 
+  justify-content: space-between;
+}
+
+.arrowImage{
+  margin-bottom: -5px;width:35px;height:35px;
+}
+
+.buttonImg{
+  width: 30px;
+}
+
+
+@media (max-width: 1323px) {
+  .testeimagem{
+    width: 550px;
+    height: 300px;
+  }
+
+  .testeImagemApagadaDireita{
+    width: 200px;
+    height: 200px;
+    padding-right: 500px;
+    overflow: hidden;
+  }
+
+  .testeImagemApagadaEsquerda{
+    width:200px;
+    height: 200px;
+    left: 0;
+  }
+
+  .arrowImage{
+    width:30px;height:30px;
+  }
+  .imagemApagadaDireita{
+   width:200px;
+   height: 200px;
+
+  }
+}
+
+@media (max-width: 1123px) {
+  
+  .arrowImage{
+    width:20px;height:20px;
+  }
+  .testeImagemApagadaEsquerda{
+    display: none;
+  }
+  
+  .testeImagemApagadaDireita{
+    display: none;
+  }
+
+  .imagemApagadaDireita{
+    display: none;
+  }
+
+  .info--title--caris{
+    font-size: 20px; 
+    margin-bottom:-30px; 
+    letter-spacing: 3px; 
+  }
+  .title-active{
+    font-size:17px;
+  }
+}
+
+@media (max-width: 700px) {
+  .buttonImg{
+    width: 20px;
+  }
+  .info--title--caris{
+    font-size: 13px; 
+    margin-bottom:-30px; 
+    letter-spacing: 3px;
+    flex-direction: column;
+  }
+  .title-active{
+    font-size:12px;
+  }
+  .testeButton{
+    flex-direction: column;
+  }
+  .divPrincipal{
+    margin-left: -30px;
+    width: 100vw;
+    height: 80% ;
+  }
+  .testeimagem{
+    margin-left: -30px;
+    width: 80%;
+    height: 80% ;
+  }
+  .testeimagem:hover{
+    margin-left: -30px;
+    width: 80%;
+    height: 80%;
+  }
+  .buttons{
+    margin-left: -40px;
+    padding-right: 10px;
+    display: flex;
+    width: 100% ;
+    justify-content: space-between;
+  }
+
+  .btn-more{
+    margin-top: 20px;
+    width: 120px;
+    padding: 5px ;
+    font-size: 9px;
+  }
+  
+}

@@ -10,7 +10,6 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 **********************/
 .movieRow--listArea {
   overflow: hidden;
-   height: 100vh;
   padding-left: 30px;
 }
 .movieRow--list {
@@ -31,7 +30,7 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 }
 
 #opacity_div{
-  background: linear-gradient(to top, #fff 30%, transparent 70%);
+  background: linear-gradient(to top, #fff 30%, transparent 100%);
   width: 350px;
   height: 550px;
   position:absolute;
@@ -91,7 +90,7 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   transform: scale(0.9);
   position: relative;
   overflow: hidden;
-  border: 1px solid #aaa;
+
   img{
     position: absolute;
     left: 50%;

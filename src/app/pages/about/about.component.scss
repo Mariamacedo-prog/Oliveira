@@ -25,7 +25,7 @@ $green:   var( --green);
 }
 
 .content-frase{
-  padding: 220px 0 40px 0;
+  padding: 180px 0 40px 0;
   margin-top: 30px;
   background-color: var(--green);
   color: #fff;
@@ -63,6 +63,7 @@ $green:   var( --green);
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  width: 30%;
   padding: 30px;
   z-index: 2;
   border: 1px solid #ccc;
@@ -86,7 +87,7 @@ $green:   var( --green);
 }
 
 .content-squad{
-  margin-top: -150px; 
+  margin-top: -200px; 
   position: absolute; 
   display: flex; 
   flex-direction: column; 
@@ -176,11 +177,16 @@ $green:   var( --green);
   .title-squad{
     margin: 10px  5px;
   }
+  
+  .content-frase{
+    padding: 150px 0 40px 0;
+
+  }
 }
 
 @media (max-width: 823px) {
   .content-squad{
-    margin-top: -250px; 
+    margin-top: -180px; 
   }
   
   .content-agenda{
@@ -207,9 +213,13 @@ $green:   var( --green);
   }
 
   .squad--area{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .squad{
+    width: 100%;
   }
 
   .leftMargin{

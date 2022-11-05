@@ -10,6 +10,7 @@ import { EmpreendimentoIndividualComponent } from './empreendimento-individual/e
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { SlidePlantasComponent } from 'src/app/components/slide-plantas/slide-plantas.component';
 
 @NgModule({
   imports: [
@@ -20,8 +21,9 @@ import { BrowserModule } from '@angular/platform-browser';
     CardEmpreendimentoModule,
     EmpreendimentosPageRoutingModule
   ],
-  declarations: [EmpreendimentosComponent, EmpreendimentoIndividualComponent],
-  exports: [EmpreendimentosComponent, EmpreendimentoIndividualComponent]
+  declarations: [EmpreendimentosComponent, EmpreendimentoIndividualComponent, 
+    SlidePlantasComponent],
+  exports: [EmpreendimentosComponent, EmpreendimentoIndividualComponent,SlidePlantasComponent]
 
 })
 export class EmpreendimentosPageModule {}

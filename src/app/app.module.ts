@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmpreendimentosPageModule } from './pages/empreendimentos/empreendimentos.module';
 import { CardEmpreendimentoComponent } from './components/card-empreendimento/card-empreendimento.component';
 import { CardEmpreendimentoModule } from './components/card-empreendimento/card-empreendimento.module';
+import { SlidePlantasComponent } from './components/slide-plantas/slide-plantas.component';
 @NgModule({
   declarations: [
     AppComponent,

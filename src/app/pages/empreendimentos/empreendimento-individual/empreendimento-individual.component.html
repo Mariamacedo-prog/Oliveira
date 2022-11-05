@@ -1,6 +1,6 @@
 <app-nav [activePage]="'Empreendimentos'"></app-nav>
 <div class="content">
-  <div class="halfImg" style="display: block; height: 50vh">
+  <div class="halfImg" style="display: block;">
     <img  [src]="empreendimento.poster" alt="teste">
   </div>
 
@@ -69,8 +69,13 @@
   <div class="galeria--area">
     <h3 class="title" style="  color: #fff;">SLIM GALERIA</h3>
     <div class="galeria">
-      <img  *ngFor="let g of empreendimento.galeria"  [src]="g.img" [alt]="g.local">
+      <img  *ngFor="let g of empreendimento.galeria"  [src]="g.img" [alt]="g.local" (click)="openModalFunc(g.img)">
     </div>
+  </div>
+
+  <div class="plantas--area">
+    <h3 class="title" style="margin-bottom:-20px">PLANTAS</h3>
+    <app-slide-plantas [images]=" empreendimento.planta"></app-slide-plantas>
   </div>
 
   <div class="localizacao--area">
@@ -78,4 +83,17 @@
     <p>{{empreendimento.endereco}}</p>
     <div id="localizacao"></div>
   </div>
+
+
+
+</div>
+
+
+
+<div class="modal" *ngIf="openModal" (click)="openModal = false" >
+ <button (click)="openModal = false" type="button" style="font-size: 25px; background-color: transparent; color: #fff; border: none; width: 100%; text-align: end; margin-left: -30px">X</button>
+
+ <div class="modal-body">
+   <img [src]="imagesrcModal" />
+ </div>
 </div>

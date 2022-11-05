@@ -157,16 +157,23 @@
         "iframe":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5105832839595!2d-46.63780567612063!3d-23.55009903571437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa5b004689%3A0x37c720ec525c8bd9!2zU8Op!5e0!3m2!1spt-BR!2sbr!4v1664851574823!5m2!1spt-BR!2sbr'  style='border:0; width: 100%; height: 100%;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
         "poster": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg",
         "galeria": [
-          {"local": "Quarto 1", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Quarto-de-Casal-com-Toucador-e-Espelho-e-Candeeiros-em-Dourado-Pachecos-Mobiliario-1.jpg?fit=2000%2C1500&ssl=1"},
           {"local": "Quarto 2", "img": "https://www.decorfacil.com/wp-content/uploads/2021/11/20211123quarto-de-casal-com-cores-neutras-capa2.jpg"},
-          {"local": "Quarto 3", "img": "https://dmhxz00kguanp.cloudfront.net/fotos/136023/quarto-infantil-estrelinha-rosa-291045.jpg"},
           {"local": "Sala", "img": "https://fotos.vivadecora.com.br/decoracao-sala-de-estar-studioeloyefreitas-13428-proportional-height_cover_medium.jpg"},
-          {"local": "Sala de Jogos", "img": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg"},
-          {"local": "Sala de Estar", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Sala-de-Estar-com-Mesa-de-Centro-Quadrada-e-Puff-em-Castanho-Pachecos-Mobiliario-1.jpg?resize=1024%2C768&ssl=1"},
-          {"local": "Elevador", "img": "https://blog.otis.com.br/wp-content/uploads/2019/11/Otis.jpg"},
+
           {"local": "Academia", "img": "https://scproduction.s3.sa-east-1.amazonaws.com/wysiwyg_uploads/cms/images/2018/10/01/19/07-h9ytse3i.JPG"},
-          {"local": "Piscina", "img": "https://f.i.uol.com.br/fotografia/2022/02/17/1645131911620eb887a2669_1645131911_5x2_rt.jpg"},
-          {"local": "Parquinho", "img": "https://magicgramas.com.br/blog/wp-content/uploads/2018/05/2.jpg"}
+          {"local": "Sala de Jogos", "img": "https://fotos.vivadecora.com.br/diversos-luizsentinger-152303-proportional-height_cover_medium.jpg"},
+
+          {"local": "Quarto 1", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Quarto-de-Casal-com-Toucador-e-Espelho-e-Candeeiros-em-Dourado-Pachecos-Mobiliario-1.jpg?fit=2000%2C1500&ssl=1"},
+          {"local": "Sala de Estar", "img": "https://i0.wp.com/pachecos.com/wp-content/uploads/Sala-de-Estar-com-Mesa-de-Centro-Quadrada-e-Puff-em-Castanho-Pachecos-Mobiliario-1.jpg?resize=1024%2C768&ssl=1"},
+  
+          {"local": "Quarto 3", "img": "https://img.elo7.com.br/product/original/43C2AF6/casa-de-boneca-barbie-kit-quarto-casa-de-bonecas.jpg"},
+  
+  
+          {"local": "Parquinho", "img": "https://media.tribunadecianorte.com.br/5f6e4c61e8d55-WhatsApp-Image-2020-09-24-at-16-57-04.jpeg"},
+          {"local": "Elevador", "img": "https://i.guim.co.uk/img/media/11cbf448606a7ebca2e5fbc55bb7598ce8fbef22/0_231_6000_3600/master/6000.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=be5e19b766746ee0b5e2a2dee0cd4ff5"},
+     
+          {"local": "Piscina", "img": "https://imagens-revista.vivadecora.com.br/uploads/2019/03/Modelo-de-piscina-de-fibra-para-area-externa.-Fonte-Henrimar.jpg"}
+
         ],
         "planta":[
           {"local": "Planta 1", "img": "https://www.tarjab.com.br/wp-content/uploads/2022/01/plantas-flexiveis-o-que-e-e-como-aproveitar-no-seu-imovel-1.jpg"},

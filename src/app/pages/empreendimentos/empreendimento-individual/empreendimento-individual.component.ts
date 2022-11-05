@@ -37,6 +37,8 @@ export class EmpreendimentoIndividualComponent implements OnInit {
     },
   ];
 
+  openModal = false;
+  imagesrcModal = '';
   constructor(private dataService: DataService,  protected  activatedRouter: ActivatedRoute, protected  router: Router) { 
     this.activatedRouter.params.subscribe(params => this.id = params['id']);
   }
@@ -53,6 +55,11 @@ export class EmpreendimentoIndividualComponent implements OnInit {
       this.stringToHTML(this.empreendimento.iframe)
     })
 
+  }
+
+  openModalFunc(src: string){
+    this.imagesrcModal = src;
+    this.openModal = true;
   }
 
   stringToHTML (str: string) {

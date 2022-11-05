@@ -18,7 +18,7 @@
 .text--faleConosco{
   color: var(--dark-gray);
   font-size: 25px;
-  margin: 20px 0;
+  margin-bottom: -30px;
 }
 
 .button-faleConosco{
@@ -116,7 +116,9 @@
 
 .frase--conteudo{
   font-size: 17px;
+  line-height: 23px;
   font-weight: lighter;
+  font-style: italic;
 }
 
 .frase--posicao{
@@ -152,6 +154,7 @@
   
   .sobre--frase{
     margin-top: -10px;
+
   }
 
   .golden--div{
@@ -184,7 +187,7 @@
   }
 
   .sobre--title{
-    font-size: 25px;
+    font-size: 21px;
   }
   
   .sobre--subtitle{

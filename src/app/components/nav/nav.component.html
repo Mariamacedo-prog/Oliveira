@@ -1,6 +1,6 @@
 <nav class="menuContainer">
-  <a routerLink="/" ><img class="logo" [src]="infoNav.logo"></a> 
-  <ol class="menuContainer-lista">
+  <a routerLink="/" ><img class="logo" [src]="infoNav.logo" ></a> 
+  <ol class="menuContainer-lista" style="margin-left: 100px;">
     <li  *ngFor="let item of listItemsMenu" ><a class="menuContainer-lista-item item-animation {{ activePage === item.name ? 'active-item': ''}} " [routerLink]="item.link" >{{item.name}}</a></li>
   </ol>
   <img class="menuButton {{showMenu === true ? 'activeMenu' : ''}}" (click)="showMenu = !showMenu" [src]="iconSrcMenu">
