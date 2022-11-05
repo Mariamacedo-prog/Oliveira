@@ -128,6 +128,32 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    }
 }
 
+.plantas--area{
+  margin:  50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.localizacao--area{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    font-size: 20px;
+    color: rgb(54, 54, 54);
+    text-align: center;
+  }
+  div{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding: 20px;
+    height: 50vh;
+  }
+}
+
 
 @media (max-width: 823px) {
   .modal-body{
@@ -145,6 +171,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     img{
       top: 80px;
       height: 400px;
+    }
+  }
+  .localizacao--area{
+    padding: 50px 0 ;
+    p {
+      font-size: 16px;
+    }
+    div{
+      width: 100%;
+      padding: 20px;
+      height: 50vh;
     }
   }
 
