@@ -87,7 +87,7 @@ $green:   var( --green);
 }
 
 .content-squad{
-  margin-top: -200px; 
+  margin-top: -240px; 
   position: absolute; 
   display: flex; 
   flex-direction: column; 
@@ -186,7 +186,7 @@ $green:   var( --green);
 
 @media (max-width: 823px) {
   .content-squad{
-    margin-top: -180px; 
+    margin-top: -150px; 
   }
   
   .content-agenda{

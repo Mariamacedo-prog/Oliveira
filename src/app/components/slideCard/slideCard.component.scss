@@ -29,7 +29,7 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   }
 }
 
-#opacity_div{
+#opacity_div, #opacity_div2{
   background: linear-gradient(to top, #fff 30%, transparent 100%);
   width: 350px;
   height: 550px;
@@ -79,7 +79,7 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 }
 
 
-#opacity_div:hover{
+#opacity_div:hover, #opacity_div2:hover{
   background: #fff;
   opacity:0; /* manipulate to desired opacity */
 }
@@ -92,6 +92,7 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   overflow: hidden;
 
   img{
+
     position: absolute;
     left: 50%;
     top: 50%;
@@ -150,7 +151,7 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 
 
 @media (max-width: 1023px) {
-  #opacity_div{
+  #opacity_div, #opacity_div2{
     background: #fff;
     opacity:0.1; /* manipulate to desired opacity */
   }
