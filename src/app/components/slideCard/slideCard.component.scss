@@ -83,6 +83,18 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   background: #fff;
   opacity:0; /* manipulate to desired opacity */
 }
+.teste{
+
+  width: 350px;
+  height: 550px;
+  position:absolute;
+  opacity:0.8; /* manipulate to desired opacity */
+  z-index: 144;
+  transition: all ease 0.2s;
+}
+.teste:hover{
+  opacity:0; /* manipulate to desired opacity */
+}
 
 .movieRow--item {
   cursor: pointer;

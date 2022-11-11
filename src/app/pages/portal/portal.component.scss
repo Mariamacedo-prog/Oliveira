@@ -12,7 +12,7 @@
   z-index: 2;
   width: 30%;
   border: 1px solid #ccc;
-  margin-bottom: 45px;
+  margin-bottom: 160px;
   box-shadow: 5px 5px 40px rgb(0, 0, 0);
 }
 
@@ -40,6 +40,12 @@
   margin-bottom: 30px;
 }
 
+.area-branca{
+  width: 100%; 
+  background-color: #fff; 
+  height: 250px;
+}
+
 .button-agendar{
   width: 100%;
   background-color: var(--green);
@@ -60,7 +66,10 @@
 }
 @media (max-width: 900px) {
   .squad-principal{
-    width: 50%;
+    width: 60%;
+  }
+  .area-branca{
+    height: 210px;
   }
 }
 @media (max-width: 823px) {
@@ -69,7 +78,10 @@
      width: 100%;
      margin-bottom: 25px;
    }
-   
+   .area-branca{
+    height: 40px;
+   }
+
    .squad-content{
      margin-top: -300px;
    }
@@ -83,12 +95,12 @@
     line-height: 18px;
      margin-bottom: 20px;
    }
-   
+
 }
 
 @media (max-width: 740px) {
   .squad-principal{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .title-portal{

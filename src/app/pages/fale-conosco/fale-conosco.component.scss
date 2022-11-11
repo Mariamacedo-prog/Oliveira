@@ -127,7 +127,8 @@
 }
 
 .input--area{
-  width: 100%; display: flex
+  width: 100%; 
+  display: flex
 }
 
 @media (max-width: 1160px) {
@@ -187,7 +188,7 @@
     padding: 2px;
   }
   .formulario-area{
-    width: 100%;
+    width: 90%;
   }
   .formulario-title{
     font-size:20px;
@@ -206,8 +207,15 @@
 
 
 @media (max-width: 740px) {
+  .formulario-principal{
+    margin: 0 ;
+  }
+  .input-text{
+    margin-left: -5px;
+  }
   .input--area{
     flex-direction: column;
+
   }
   .title-agenda{
     font-size: 25px ; 
