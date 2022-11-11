@@ -29,14 +29,26 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   }
 }
 
-#opacity_div, #opacity_div2{
+#opacity_div{
   background: linear-gradient(to top, #fff 30%, transparent 100%);
   width: 350px;
   height: 550px;
   position:absolute;
-  opacity:0.8; /* manipulate to desired opacity */
+  opacity: 1; /* manipulate to desired opacity */
   z-index: 144;
   transition: all ease 0.2s;
+  
+}
+
+#opacity_div2{
+  background: linear-gradient(to top, #fff 30%, transparent 5%);
+  width: 350px;
+  height: 550px;
+  position:absolute;
+  opacity: 1; /* manipulate to desired opacity */
+  z-index: 144;
+  transition: all ease 0.2s;
+  box-shadow: 5px 5px 40px rgb(255,255, 255);
 }
 
 .absolute-text{
