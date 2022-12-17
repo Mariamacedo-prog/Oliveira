@@ -49,10 +49,11 @@ export class EmpreendimentoIndividualComponent implements OnInit {
       let empreendimentos = data.pageEmpreendimentos.arrayEmpreendimentos;
       this.imgBase64 = data.image64;
       this.empreendimento = empreendimentos.find((item: any )=> item.id == this.id);
-      console.log(this.id, this.empreendimento);
+      if(this.empreendimento == undefined) {
+        this.router.navigate(['/empreendimentos']);
+        return;
+      }
       this.getStatus();
-
-      this.stringToHTML(this.empreendimento.iframe)
     })
 
   }
@@ -65,7 +66,7 @@ export class EmpreendimentoIndividualComponent implements OnInit {
   stringToHTML (str: string) {
     let example = document.getElementById('localizacao');
     if(example !== null){
-      example.innerHTML = str
+      example.innerHTML = str;
     }
   };
 

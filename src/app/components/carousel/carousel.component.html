@@ -9,7 +9,8 @@
       <h1 [ngClass]="{'title-active': selectedIndex === i}">{{image.text.title}}</h1>
       <h3 [ngClass]="{'subtitle-active': selectedIndex === i}">{{image.text.subtitle}}</h3>
     </div>
-    <a class="btn-more" [href]="image.link" target="_blank" [ngClass]="{'button-active': selectedIndex === i}">SAIBA MAIS</a>
+    <a *ngIf="image.link.length > 0" class="btn-more" [href]="image.link" target="_blank" [ngClass]="{'button-active': selectedIndex === i}">SAIBA MAIS</a>
+    <a *ngIf="image.link.length == 0"class="btn-more" [routerLink]="'/empreendimentos/'+ image.id" target="_blank" [ngClass]="{'button-active': selectedIndex === i}">SAIBA MAIS</a>
   </div>
 </div>
  

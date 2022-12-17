@@ -6,6 +6,7 @@ interface carouselImage {
   alt: string;
   text: any;
   link: string;
+  id?: number;
 } 
 
 @Component({

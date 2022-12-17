@@ -1,7 +1,7 @@
 <app-nav [activePage]="'Empreendimentos'"></app-nav>
 <div class="content fade">
   <div class="halfImg" style="display: block;">
-    <img  [src]="empreendimento.poster" alt="teste">
+    <img  [src]="empreendimento.posterBackground" alt="teste">
   </div>
 
   <div class="content-empreendimento-info">
@@ -16,7 +16,7 @@
         </h4>
         <ul>
           <li>{{empreendimento.endereco}}</li>
-          <li>{{empreendimento.area}}</li>
+          <li *ngIf="empreendimento.area">{{empreendimento.area}}</li>
           <li *ngFor="let i of empreendimento.info">{{i}}</li>
         </ul>
         <div class="golden-border" ></div>
@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <div class="empreendimento--vantagem--area">
+  <div *ngIf="empreendimento.telaInfo" class="empreendimento--vantagem--area">
     <div  class="squad--area">
       <div class="squad">
         <span class="icon-squad">
@@ -52,7 +52,7 @@
     </div>
   </div>
 
-  <div class="empreendimento--status--area">
+  <div *ngIf="empreendimento.telaInfo" class="empreendimento--status--area">
     <div class="status--item" *ngFor="let s of statusArray" [style]="s.stt === 'Incompleto'? 'opacity: 0.4' : 'opacity: 1'">
       <span [style]="s.stt === 'Completo' ? 'background-color: rgb(75,94, 84)' :  'background-color: var(--yellow)'">
         <img [src]="s.icon" />
@@ -66,22 +66,22 @@
     </div>
   </div>
 
-  <div class="galeria--area">
+  <div *ngIf="empreendimento.telaInfo" class="galeria--area">
     <h3 class="title" style="  color: #fff;">SLIM GALERIA</h3>
     <div class="galeria">
       <img  *ngFor="let g of empreendimento.galeria"  [src]="g.img" [alt]="g.local" (click)="openModalFunc(g.img)">
     </div>
   </div>
 
-  <div class="plantas--area">
+  <div *ngIf="empreendimento.telaInfo" class="plantas--area">
     <h3 class="title" style="margin-bottom:-20px">PLANTAS</h3>
     <app-slide-plantas [images]=" empreendimento.planta"></app-slide-plantas>
   </div>
 
-  <div class="localizacao--area">
+  <div *ngIf="empreendimento.telaInfo" class="localizacao--area">
     <h3 class="title" style="  color: #000;">LOCALIZAÇÃO</h3>
     <p>{{empreendimento.endereco}}</p>
-    <div id="localizacao"></div>
+    <div id="localizacao">{{stringToHTML(empreendimento.iframe)}}</div>
   </div>
 
 

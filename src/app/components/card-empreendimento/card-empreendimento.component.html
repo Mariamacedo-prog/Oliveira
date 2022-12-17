@@ -11,7 +11,8 @@
 
     <div class="card-area-button">
       <span *ngIf="image.status">{{image.status}}</span>
-      <a *ngIf="image.id" [routerLink]="'/empreendimentos/'+ image.id">CONHEÇA</a>
+      <a *ngIf="image.telaInfo && image.id && image.status != 'ENTREGUE'" [routerLink]="'/empreendimentos/'+ image.id">CONHEÇA</a>
+      <a *ngIf="image.telaInfo == false && image.link && 'ENTREGUE'" [href]="image.link" target="_blank" >CONHEÇA</a>
     </div>
   </div>
 </div>

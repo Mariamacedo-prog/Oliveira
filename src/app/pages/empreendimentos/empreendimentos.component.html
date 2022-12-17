@@ -6,7 +6,7 @@
 
   <h1 class="principal-titulo" >EMPREENDIMENTOS</h1>
   <p class="txt-gray">{{pageInfo.texto1}}</p>
-  <div  [style]="' background: url(' + pageInfo.background + ');'">
+  <div *ngIf="pageInfo.background" [style]="' background: url(' + pageInfo.background + ');'">
 
   </div>
   <div class="buttons-list">
