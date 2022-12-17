@@ -10,6 +10,7 @@ import { DataService } from 'src/app/data.service';
 export class HomeComponent implements OnInit {
   homeInfo: any = {};
   images: any = [];
+  slideCardImages: any = [];
   whatslogo: string = '';
   whatsLink: string = '';
   redesSociais: any = []
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
     document.documentElement.scrollTop = -2000;
     await this.dataService.getData().subscribe((data: any) =>{
        this.images = data.carouselArray;
+       this.slideCardImages = data.slideCard;
        this.redesSociais = data.oliveiraInfo.redesSociais;
        this.whatsLink = data.oliveiraInfo.whatsLink;
        this.homeInfo = data.pageHome;

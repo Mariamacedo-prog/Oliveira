@@ -2,7 +2,7 @@
   <div class="movieRow--listArea">
     <div class="movieRow--list"  [ngStyle]="{'margin-left.px': scrollX,  'width.px': this.images.length * 450 }"  >
           <a *ngFor="let item of images" class="movieRow--item" [href]="item.link" target="_blank" (touchstart)="logTouchstart($event)">
-            <img
+            <img style="height: 100%; width: 33vw"
               [src]="item.img"
               [alt]="item.alt"
             />

@@ -1,5 +1,5 @@
 .movieRow {
-
+  margin-left : 150px;
 }
 .movieRow h2 {
   margin: 0px 0px 0px 30px;
@@ -13,7 +13,6 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   padding-left: 30px;
 }
 .movieRow--list {
-
   display: flex;
   transition: all ease 0.5s;
 }
@@ -175,6 +174,10 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 
 
 @media (max-width: 1023px) {
+  .movieRow {
+    margin-left : 0;
+  }
+
   #opacity_div, #opacity_div2{
     background: #fff;
     opacity:0.1; /* manipulate to desired opacity */
@@ -183,10 +186,9 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   .movieRow--left {
     opacity: 1;
   }
-
-  .movieRow--item {
-    display: inline-block;
-    width: 350px;
+  .movieRow--list {
+    display: block;
+    transition: all ease 0.5s;
   }
 
   .movieRow--listArea {
@@ -197,6 +199,7 @@ Como foi feito a area de rolagem dos filmes: listArea, liste e item;
   .text-subtitle{
     color: #fff;
   }
+
 }
 
 

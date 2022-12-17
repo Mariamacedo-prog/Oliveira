@@ -18,7 +18,7 @@ export class AboutComponent implements OnInit {
   async ngOnInit(){
     document.documentElement.scrollTop = -2000;
     await this.dataService.getData().subscribe((data: any) =>{
-      this.images = data.carouselArray;
+      this.images = data.slideCard;
       this.aboutInfo = data.pageSobre;
       this.whatsLink = data.oliveiraInfo.whatsLink;
       this.endereco = data.oliveiraInfo.endereco;
@@ -27,4 +27,10 @@ export class AboutComponent implements OnInit {
 
   }
 
+  stringToHTML (str: string, id: string) {
+    let example = document.getElementById(id);
+    if(example !== null){
+      example.innerHTML = str
+    }
+  };
 }

@@ -1,73 +1,80 @@
-<div class="content fade">
+
   <app-nav [activePage]="'Sobre a Oliveira'"></app-nav>
-  <div class="halfImg" style="display: block; ">
-    <img  [src]="aboutInfo.imgPrincipal" alt="teste">
-  </div>
-  <div class="content-squad" >
-    <h1 class="principal-titulo-sobre" >Sobre a <b>Oliveira</b></h1>
-    <div class="squad-principal">
-      <p class="txt-gray">{{aboutInfo.textoPrincipal}}</p>
+  <div class="content master fade" style="background-color: #fff !important;">
+  
+
+    <div class="halfImg" style="display: block; ">
+      <img  [src]="aboutInfo.imgPrincipal" alt="teste">
     </div>
-    <div  class="squad--area">
-      <div class="squad">
-        <span class="icon-squad">
-          <img *ngIf="image64.gota" [src]="image64.gota" alt="gota" style="width: 20px; height: 20px" />
-        </span>
-        <span class="title-squad">Missão</span>
-        <p class="txt-gray">{{aboutInfo.missao}}</p>
+    <div class="content-squad" >
+      <h1 class="principal-titulo-sobre" >Sobre a <b>Oliveira</b></h1>
+      <div class="squad-principal">
+        <p class="txt-gray">{{aboutInfo.textoPrincipal}}</p>
       </div>
-      <div class="squad leftMargin" >
-        <span class="icon-squad" style="padding-bottom: 15px">
-          <img *ngIf="image64.bola" [src]="image64.bola" alt="bola" style="width: 15px; height: 15px" />
-        </span>
-        <span class="title-squad">Visão</span>
-        <p class="txt-gray">{{aboutInfo.visao}}</p>
-      </div>
-      <div class="squad leftMargin">
-        <span class="icon-squad">
-          <img *ngIf="image64.gota" [src]="image64.gota" alt="gota" style="width: 20px; height: 20px" />
-        </span>
-        <span class="title-squad">Valores</span>
-        <p class="txt-gray">{{aboutInfo.valores}}</p>
+      <div  class="squad--area" >
+        <div class="squad">
+          <span class="icon-squad">
+            <img *ngIf="image64.gota" [src]="image64.gota" alt="gota" style="width: 20px; height: 20px" />
+          </span>
+          <span class="title-squad">Missão</span>
+          <p class="txt-gray" id="missaoInner">{{ this.stringToHTML(aboutInfo.missao, 'missaoInner')}}</p>
+        </div>
+        <div class="squad leftMargin" >
+          <span class="icon-squad" style="padding-bottom: 15px">
+            <img *ngIf="image64.bola" [src]="image64.bola" alt="bola" style="width: 15px; height: 15px" />
+          </span>
+          <span class="title-squad">Visão</span>
+          <p class="txt-gray" id="visaoInner">{{this.stringToHTML(aboutInfo.visao, 'visaoInner')}}</p>
+        </div>
+        <div class="squad leftMargin">
+          <span class="icon-squad">
+            <img *ngIf="image64.gota" [src]="image64.gota" alt="gota" style="width: 20px; height: 20px" />
+          </span>
+          <span class="title-squad">Valores</span>
+          <p class="txt-gray" id="valoresInner">{{this.stringToHTML(aboutInfo.valores,'valoresInner')}}</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div style="width: 100%; background-color: #fff; height: 150px"></div>
-  <div class="content-frase">
-    <div class="frase" *ngIf="aboutInfo.frase">
-      <p class="frase--conteudo" *ngIf="aboutInfo.frase"><img class="aspas" [src]="aboutInfo.aspas">{{aboutInfo.frase.conteudo ? aboutInfo.frase.conteudo : ''}}</p>
-      <p class="frase--nome" style="  font-weight: bold;">{{aboutInfo.frase.nome}}</p>
-      <p class="frase--posicao" >{{aboutInfo.frase.posicao}}</p>
+    <div style="width: 100%; height: 150px"></div>
+    <div class="content-frase" >
+      <div class="frase" *ngIf="aboutInfo.frase">
+        <p class="frase--conteudo" *ngIf="aboutInfo.frase"><img class="aspas" [src]="aboutInfo.aspas">{{aboutInfo.frase.conteudo ? aboutInfo.frase.conteudo : ''}}</p>
+        <p class="frase--nome" style="  font-weight: bold;">{{aboutInfo.frase.nome}}</p>
+        <p class="frase--posicao" >{{aboutInfo.frase.posicao}}</p>
+      </div>
+      
     </div>
+    <div class="halfImg" style="display: block;">
+       <div id="banner-construcao" [style]=" 'background-image: url(' + aboutInfo.imgSecundaria+ '); '">
+      </div>
+    </div>
+
     
-  </div>
-  <div class="halfImg" style="display: block;">
-    <img  [src]="aboutInfo.imgSecundaria" alt="teste">
-  </div>
-  <div style="display:flex; flex-direction: column; align-items:center; justify-content:center;">
-    <h2 class="principal-titulo" ><b>Nossos</b> Empreendimentos</h2>
-    <p class="sobre--frase" style="margin-top: 5px">Conheça nossos empreendimentos</p>
-    <div style="width:70% ;">
-      <app-slideCard  [images]="images"></app-slideCard>
+ 
+    <div style="display:flex; flex-direction: column; align-items:center; justify-content:center;">
+      <h2 class="principal-titulo" ><b>Nossos</b> Empreendimentos</h2>
+      <p class="sobre--frase" style="margin-top: 5px">Conheça nossos empreendimentos</p>
+      <div style="width:70% ;">
+        <app-slideCard  [images]="images"></app-slideCard>
+      </div>
+    
     </div>
   
-  </div>
-
-
-  <div class="image-agenda"  [style]="'background: url(' + aboutInfo.imgAgendeSuaVisita + ');   '" >
-  </div>
-
-  <div style=" display: flex; flex-direction: column; align-items:center;  height: 50vh; width: 100%; margin-top: -50vh; color: #fff; justify-content: space-evenly; position: relative;">
-    <h3 class="title-agenda" >AGENDE UMA VISITA</h3>
-    <div *ngIf="endereco.rua && endereco.numero && endereco.bairro && endereco.cidade && endereco.estado" style="display: flex; flex-direction: column; align-items:center; ">
-      <img *ngIf="image64.location" [src]="image64.location" alt="location" style="width: 30px; height: 30px" />
-      <p class="endereco-agenda">LOCALIZAÇÃO: {{ endereco.rua.toUpperCase() +', ' + 'N°'+ endereco.numero + ', '+  endereco.complemento.toUpperCase()}}</p>
-      <p class="endereco-agenda">{{endereco.bairro.toUpperCase() +', ' + endereco.cidade.toUpperCase() + '/ '+ endereco.estado.toUpperCase()}}</p>
+  
+    <div *ngIf="aboutInfo.imgExterno" class="image-agenda"  [style]="'background-image: url(' + aboutInfo.imgExterno + '); '" >
     </div>
-     <a class="buttonOrange button-agendar" [href]="whatsLink" target="_blank" style="text-decoration: none; "><b>AGENDAR</b></a>
+  
+    <div style=" display: flex; flex-direction: column; align-items:center;  height: 50vh; width: 100%; margin-top: -50vh; color: #fff; justify-content: space-evenly; position: relative;">
+      <h3 class="title-agenda" >AGENDE UMA VISITA</h3>
+      <div *ngIf="endereco.rua && endereco.numero && endereco.bairro && endereco.cidade && endereco.estado" style="display: flex; flex-direction: column; align-items:center; ">
+        <img *ngIf="image64.location" [src]="image64.location" alt="location" style="width: 30px; height: 30px" />
+        <p class="endereco-agenda">LOCALIZAÇÃO: {{ endereco.rua.toUpperCase() +', ' + 'N°'+ endereco.numero + ' '+  endereco.complemento.toUpperCase()}}</p>
+        <p class="endereco-agenda">{{endereco.bairro.toUpperCase() +', ' + endereco.cidade.toUpperCase() + '/ '+ endereco.estado.toUpperCase()}}</p>
+      </div>
+       <a class="buttonOrange button-agendar" [href]="whatsLink" target="_blank" style="text-decoration: none; "><b>AGENDAR</b></a>
+    </div>
+  
+  
+    <div class="content-agenda">
+    </div>
   </div>
-
-
-  <div class="content-agenda">
-  </div>
-</div>

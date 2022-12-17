@@ -4,6 +4,19 @@ $green:   var( --green);
   width: 100%;
   overflow: hidden;
 }
+#banner-construcao{
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 400px;
+    padding: 100px 10%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .principal-titulo, .principal-titulo-sobre{
   font-size: 40px;
@@ -25,7 +38,7 @@ $green:   var( --green);
 }
 
 .content-frase{
-  padding: 180px 0 40px 0;
+  padding: 220px 0 40px 0;
   margin-top: 30px;
   background-color: var(--green);
   color: #fff;
@@ -49,7 +62,10 @@ $green:   var( --green);
 
 .frase--conteudo{
   font-size: 17px;
+  line-height: 23px;
   font-weight: lighter;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .frase--posicao{
@@ -63,8 +79,8 @@ $green:   var( --green);
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  width: 30%;
-  padding: 30px;
+  width: 33%;
+  padding: 20px;
   z-index: 2;
   border: 1px solid #ccc;
   box-shadow: 5px 5px 40px rgb(0, 0, 0);
@@ -74,16 +90,19 @@ $green:   var( --green);
   background-color: #fff;
   padding: 20px;
   z-index: 2;
-  width: 60%;
+  width: 80%;
   border: 1px solid #ccc;
   margin-bottom: 45px;
   box-shadow: 5px 5px 40px rgb(0, 0, 0);
 }
 
 .squad--area{
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: center;
+}
+.master{
+
 }
 
 .content-squad{
@@ -152,8 +171,11 @@ $green:   var( --green);
    height: 50vh; 
    width: 100%; 
   filter: brightness(20%); 
-  background-repeat: no-repeat !important; 
-  background-size: cover  !important; 
+  background-repeat: no-repeat ;background-size: cover ; 
+}
+
+.teste{
+  background-image: url()
 }
 
 @media (max-width: 1260px) {
@@ -162,13 +184,9 @@ $green:   var( --green);
   }
   
   .squad-principal{
-    width: 80%;
     padding: 10px;
   }
-  
-  .squad--area{
-    width: 80%;
-  }
+
   
   .icon-squad{
     font-size: 25px;
@@ -179,12 +197,11 @@ $green:   var( --green);
   }
   
   .content-frase{
-    padding: 150px 0 40px 0;
-
+    padding: 250px 0 40px 0;
   }
 }
 
-@media (max-width: 823px) {
+@media (max-width: 970px) {
   .content-squad{
     margin-top: -150px; 
   }
@@ -205,9 +222,12 @@ $green:   var( --green);
   .endereco-agenda{
     font-size: 11px;
   }
+  .content-frase{
+    padding: 350px 0 40px 0;
+  }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 900px) {
   .title-agenda{
     font-size: 25px ; 
   }
