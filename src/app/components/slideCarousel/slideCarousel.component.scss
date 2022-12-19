@@ -13,8 +13,7 @@
 Como foi feito a area de rolagem dos filmes: listArea, liste e item;
 **********************/
 .movieRow--listArea {
-  overflow-x: hidden;
-
+  overflow: hidden;
 }
 .movieRow--list {
   display: flex;
