@@ -1,6 +1,25 @@
 .content{
  width: 100%;
 }
+.halfImgPortal{
+  margin: 0 ;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: inherit;
+  height: 400px;
+  img{
+    position: absolute;
+    left:50%;
+    right:50%;
+    top:50%;
+    width:100vw;
+    height: 600px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
 
 .squad-principal{
   display: flex;
@@ -82,6 +101,13 @@
     height: 40px;
    }
 
+   .halfImgPortal{
+    height: 200px;
+    img{
+      top: 80px;
+      height: 400px;
+    }
+  }
    .squad-content{
      margin-top: -300px;
    }
