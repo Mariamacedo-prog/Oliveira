@@ -6,6 +6,7 @@
       {"logo": "../assets/linkedin.png", "link": "https://www.linkedin.com/company/oliveira-construtora-e-incorporadora/"}
     ],
     "arrowUpImage":"../assets/arrow-up.png",
+    "politicaPrivacidadePdf": "../assets/pdf_politica_privacidade.pdf",
     "endereco": {
       "rua": "Rua Pascoal da Costs",
       "numero": "379",
@@ -17,7 +18,7 @@
 
     },
     "logo": "../assets/logo.png",
-    "nomeAno": "Oliveira Construtora e Incorporadora 2022",
+    "nomeAno": "Oliveira Construtora e Incorporadora",
     "cnpj": "CNPJ: 18.993.316/0001-97",
     "whatsLink": "https://api.whatsapp.com/send?L=pt&phone=5511997400273"
   },

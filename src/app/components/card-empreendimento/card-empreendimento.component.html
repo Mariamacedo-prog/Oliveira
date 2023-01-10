@@ -1,8 +1,11 @@
 
 <div class="content"  *ngIf="image !== {}">
-  <div  *ngIf="image.corpoTecnico" class="trapezio"></div>
-  <div  *ngIf="image.corpoTecnico" class="corpo--tecnico"> CORPO TÉCNICO </div>
-  <img class="card-img" *ngIf="image.poster" [src]="image.poster" />
+  <div class="card-img" style="display: flex; justify-content: flex-end;">
+    <div  *ngIf="image.corpoTecnico" class="trapezio"></div>
+    <div  *ngIf="image.corpoTecnico" class="corpo--tecnico"> CORPO TÉCNICO </div>
+    <img class="card-img" *ngIf="image.poster" [src]="image.poster" />
+  </div>
+
 
   <div class="card-area">
     <div class="card-info">

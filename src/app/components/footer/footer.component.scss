@@ -75,6 +75,16 @@
   color: rgb(243, 153, 18);
   font-weight: bold;
 }
+
+
+
+.link-politica{
+  color: #000;
+  transition: all 0.5s ease;
+}
+.link-politica:hover{
+  color: var(--yellow);
+}
 @media (max-width: 915px) {
   .content--footer{
     width: 100%;
