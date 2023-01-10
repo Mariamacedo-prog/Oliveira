@@ -5,7 +5,6 @@
   flex-direction: column;
   overflow: hidden;
 }
-
 .golden--div{
   margin-bottom: -380px;
   margin-left: 20px;
@@ -14,7 +13,6 @@
   background-color: var(--golden);
 
 }
-
 .content-empreendimento-info{
 
   display: flex;
@@ -22,7 +20,6 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .image--oliveira{
   padding-left:200px;
   img{
@@ -30,7 +27,6 @@
     height: 300px;
   }
 }
-
 .info--oliveira{
   display: flex;
   flex-direction: column;
@@ -74,19 +70,16 @@
     padding: 10px;
   }
 }
-
 .div-empreendimento-info{
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
 }
-
 .golden-border{
   width:50px ;
   border-bottom: 4px solid var(--yellow);
 }
-
 .empreendimento--vantagem--area{
   width:100%;
   background-color: var(--golden);
@@ -96,7 +89,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .squad{
   display: flex;
   flex-direction: column;
@@ -108,7 +100,6 @@
   border: 1px solid #ccc;
   box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
 }
-
 .squad-principal{
   background-color: #fff;
   padding: 20px;
@@ -118,13 +109,11 @@
   margin-bottom: 45px;
   box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
 }
-
 .squad--area{
   width: 60%;
   display: flex;
   justify-content: center;
 }
-
 .content-squad{
   margin-top: -150px; 
   position: absolute; 
@@ -133,27 +122,22 @@
   align-items: center; 
   justify-content: space-around;
 }
-
 .icon-squad{
   font-size: 35px;
   margin-bottom: 15px;
   color: var( --yellow);
 }
-
 .title-squad{
   font-size: 20px;
   font-weight: 900;
   margin: 20px  5px;
 }
-
 .leftMargin{
   margin-left: 23px;
 }
-
 .empreendimento--status--area{
   display: flex;
 }
-
 .status--item{
   display: flex;
   align-items: center;
@@ -192,7 +176,6 @@
     }
   }
 }
-
 .galeria--area{
   background-color: var(--green);
   width: 100%;
@@ -200,14 +183,12 @@
   flex-direction: column;
   align-items: center;
 }
-
 .title{
   padding: 50px 0; 
   font-size: 55px ; 
   font-weight: bolder;
   letter-spacing: 7px;
 }
-
 .galeria{
   width: 100%;
 
@@ -219,15 +200,10 @@
   }
 }
 
-
-
-@media (max-width: 1223px) {
+@media (max-width: 1075px) {
   .squad--area{
     width: 80%;
   }
-}
-
-@media (max-width: 1075px) {
   .golden--div{
     margin-bottom: -350px;
     margin-left: 20px;
@@ -235,16 +211,13 @@
     height: 450px;
     background-color: var(--golden);
   }
-  
   .content-empreendimento-info{
     height: 100vh;
     width: 100%;
   }
-  
   .image--oliveira{
     padding:  0 50px;  
   }
-  
   .info--oliveira{
     padding:  0 50px;
  
@@ -261,7 +234,6 @@
       margin-top: 10px;
     } 
   }
-
   .div-empreendimento-info{
     justify-content: center;
   }
@@ -288,10 +260,23 @@
 }
 
 @media (max-width: 850px) {
-  .title{
-    padding: 50px 0; 
-    font-size: 45px ; 
+.title{
+    padding: 50px 0 0 0; 
+    font-size: 35px ; 
     letter-spacing: 5px;
+  }
+
+  .info--oliveira{
+    h4{
+      line-height: 25px;
+      width: 100%;
+      letter-spacing: 2px;
+      font-size: 20px;
+    }
+    ul{
+      margin: 10px;
+      font-size: 15px;
+    }
   }
 
   .squad--area{
@@ -331,18 +316,10 @@
       max-height: 80%;
      }
   }
-
-  .title{
-    padding: 50px 0 0 0; 
-    font-size: 35px ; 
-    letter-spacing: 5px;
-  }
-  
   .galeria{
     img{
       width: 50%;
       padding: 10px;
     }
   }
-  
 }

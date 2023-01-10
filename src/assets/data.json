@@ -33,7 +33,7 @@
     {"img": "../assets/images/empreendimentos/Residencial_das_Oliveira/Fachada.png",
     "id": 2,
      "alt": "Residencial das Oliveiras",
-     "link": "",
+     "link": "http://oliveirasmairinque.com.br/",
      "text": {
         "title": "Residencial das Oliveiras", "subtitle": " FACHADA RESIDENCIAL", "status": "BREVE LANÇAMENTO"
       }
@@ -51,14 +51,14 @@
     {"img": "../assets/images/empreendimentos/Residencial_das_Oliveira/Piscina.png",
      "id": 2,
      "alt": "Residencial das Oliveiras",
-     "link": "",
+     "link": "http://oliveirasmairinque.com.br/",
      "text": {
         "title": "Residencial das Oliveiras", "subtitle": "FACHADA RESIDENCIAL", "status": "BREVE LANÇAMENTO"
     }},
     {"img": "../assets/images/empreendimentos/Residencial_das_Oliveira/Fachada.png",
     "id": 2,
     "alt": "Residencial das Oliveiras",
-    "link": "",
+    "link": "http://oliveirasmairinque.com.br/",
     "text": {
       "title": "Residencial das Oliveiras", "subtitle": " FACHADA RESIDENCIAL", "status": "BREVE LANÇAMENTO"
     }},
