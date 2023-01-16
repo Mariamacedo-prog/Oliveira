@@ -67,7 +67,7 @@
   </div>
 
   <div *ngIf="empreendimento.telaInfo" class="galeria--area">
-    <h3 class="title" style="  color: #fff;">SLIM GALERIA</h3>
+    <h3 class="title" style="  color: #fff;">{{empreendimento.titleGalerie}}</h3>
     <div class="galeria">
       <img  *ngFor="let g of empreendimento.galeria"  [src]="g.img" [alt]="g.local" (click)="openModalFunc(g.img)">
     </div>
